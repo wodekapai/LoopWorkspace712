@@ -133,7 +133,7 @@ extension PumpOpsSession {
     ///         - PumpOpsError.noResponse
     ///         - PumpOpsError.unexpectedResponse
     ///         - PumpOpsError.unknownResponse
-    private func wakeup(_ duration: TimeInterval = TimeInterval(minutes: 1)) throws {
+    private func wakeup(_ duration: TimeInterval = TimeInterval(minutes: 2)) throws {
         guard !pump.isAwake else {
             return
         }
