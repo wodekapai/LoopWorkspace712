@@ -134,8 +134,14 @@ class MinimedUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                     self.show(vc, sender: self)
                 }
             }
+            
+            let debugClick = {
+                let viewController = MinimedPumpSettingsViewController(pumpManager: self.pumpManager, supportedInsulinTypes: self.allowedInsulinTypes)
+                self.pushViewController(viewController, animated: true)
+            }
 
-            let view = MinimedPumpSettingsView(viewModel: viewModel, supportedInsulinTypes: allowedInsulinTypes, handleRileyLinkSelection: handleRileyLinkSelection, rileyLinkListDataSource: rileyLinkListDataSource)
+            let view = MinimedPumpSettingsView(viewModel: viewModel, supportedInsulinTypes: allowedInsulinTypes, handleRileyLinkSelection: handleRileyLinkSelection,
+                                               rileyLinkListDataSource: rileyLinkListDataSource, debugClick: debugClick)
             return hostingController(rootView: view)
         }
     }

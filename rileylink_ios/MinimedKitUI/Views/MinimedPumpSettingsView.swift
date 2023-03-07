@@ -12,6 +12,7 @@ import LoopKitUI
 import LoopKit
 import RileyLinkKit
 import RileyLinkBLEKit
+import MinimedKit
 
 struct MinimedPumpSettingsView: View {
 
@@ -28,12 +29,15 @@ struct MinimedPumpSettingsView: View {
     @State private var showSyncTimeOptions = false;
 
     var handleRileyLinkSelection: (RileyLinkDevice) -> Void
+    
+    var debugClick: () -> Void
 
-    init(viewModel: MinimedPumpSettingsViewModel, supportedInsulinTypes: [InsulinType], handleRileyLinkSelection: @escaping (RileyLinkDevice) -> Void, rileyLinkListDataSource: RileyLinkListDataSource) {
+    init(viewModel: MinimedPumpSettingsViewModel, supportedInsulinTypes: [InsulinType], handleRileyLinkSelection: @escaping (RileyLinkDevice) -> Void, rileyLinkListDataSource: RileyLinkListDataSource, debugClick: @escaping () -> Void) {
         self.viewModel = viewModel
         self.supportedInsulinTypes = supportedInsulinTypes
         self.handleRileyLinkSelection = handleRileyLinkSelection
         self.rileyLinkListDataSource = rileyLinkListDataSource
+        self.debugClick = debugClick
     }
 
     var body: some View {
@@ -184,7 +188,10 @@ struct MinimedPumpSettingsView: View {
                 LabeledValueView(label: LocalizedString("Region", comment: "The title of the cell showing the pump region"),
                                  value: String(describing: viewModel.pumpManager.state.pumpRegion))
             }
-
+            
+            Section () {
+                debugButton
+            }
 
             Section() {
                 deletePumpButton
@@ -374,4 +381,8 @@ struct MinimedPumpSettingsView: View {
         })
     }
 
+    private var debugButton: some View {
+        Button("调试泵", action: self.debugClick)
+    }
+    
 }
