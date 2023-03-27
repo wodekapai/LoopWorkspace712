@@ -404,7 +404,7 @@ extension PumpOpsSession {
 
         let battResp = try getBatteryStatus()
 
-        // let status = try getPumpStatus()
+        // let status = try getPumpStatus() 忽略掉状态，因为状态无法获取
 
         let (reservoir, clock) = try getRemainingInsulin()
 
@@ -598,7 +598,7 @@ extension PumpOpsSession {
     /// Sets a bolus
     ///
     /// *Note: Use at your own risk!*
-    ///
+    ///  大剂量的时候避免正在大剂量提示
     /// - Parameters:
     ///   - units: The number of units to deliver
     ///   - cancelExistingTemp: If true, additional pump commands will be issued to clear any running temp basal. Defaults to false.
@@ -610,9 +610,9 @@ extension PumpOpsSession {
             try wakeup()
             pumpModel = try getPumpModel()
 
-            //let status = try getPumpStatus()
+            /* let status = try getPumpStatus() // 忽略掉状态因为状态无法获取
 
-            /* if status.bolusing {
+            if status.bolusing {
                 throw PumpOpsError.bolusInProgress
             }
 
@@ -627,15 +627,7 @@ extension PumpOpsSession {
             case .command(let error):
                 return SetBolusError.certain(error)
             case .arguments(let error):
-                switch error {
-                    case .pumpError(let code):
-                        if code == PumpErrorCode.bolusInProgress {
-                            return nil
-                        }
-                        return SetBolusError.uncertain(error)
-                    case _:
-                        return SetBolusError.uncertain(error)
-                }
+                return SetBolusError.certain(error)
             }
         } catch {
             return SetBolusError.certain(PumpOpsError.rfCommsFailure(String(describing: error)))
@@ -663,14 +655,23 @@ extension PumpOpsSession {
             case .command(let error):
                 return SetBolusError.certain(error)
             case .arguments(let error):
-                return SetBolusError.uncertain(error)
+                switch error {
+                    case .pumpError(let code):
+                        if code == PumpErrorCode.bolusInProgress {
+                            return nil
+                        }
+                        return SetBolusError.uncertain(error)
+                    case _:
+                        return SetBolusError.uncertain(error)
+                }
             }
         } catch {
             assertionFailure()
         }
         return nil
     }
-
+    
+    
     /// - Throws: PumpCommandError
     public func setRemoteControlEnabled(_ enabled: Bool) throws {
         let message = PumpMessage(pumpID: settings.pumpID, type: .setRemoteControlEnabled, body: SetRemoteControlEnabledMessageBody(enabled: enabled))
@@ -942,9 +943,14 @@ extension PumpOpsSession {
             return a.avgRSSI > b.avgRSSI
         })
 
-        guard sortedTrials.first!.successes > 0 else {
+        guard sortedTrials.first!.successes > 0 else { // 避免长时间搜不到，其实middle就是很不错的选择了
             try messageSender.setBaseFrequency(fallback ?? middleFreq)
-            throw PumpOpsError.rfCommsFailure("No pump responses during scan")
+            let results = FrequencyScanResults(
+                trials: trials,
+                bestFrequency: sortedTrials.first!.frequency
+            )
+            return results
+            // throw PumpOpsError.rfCommsFailure("No pump responses during scan")
         }
 
         let results = FrequencyScanResults(

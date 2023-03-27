@@ -77,7 +77,7 @@ public enum MessageType: UInt8 {
     case readTempBasal                = 0x98
     case getGlucosePage               = 0x9A
     case readCurrentPageNumber        = 0x9d
-    case readSettings                 = 0x91
+    case readSettings                 = 0x91 // 读取和设置最大剂量 
     case readCurrentGlucosePage       = 0xcd
     case readPumpStatus               = 0xce
 
