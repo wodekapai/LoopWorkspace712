@@ -1,0 +1,1778 @@
+/* The string format appended to active insulin that describes pending insulin. (1: pending insulin) */
+" (pending: %@)" = " (待执行: %@)";
+
+/* The format for an active override preset. (1: preset symbol)(2: preset name) */
+"%@ %@" = "%1$@ %2$@";
+
+/* Formats absorbed carb value */
+"%@ absorbed" = "%@ 已吸收";
+
+/* The subtitle format describing total insulin. (1: localized insulin total) */
+"%@ U Total" = "%@ 单位 总量";
+
+/* Appends a full-stop to a statement */
+"%@." = "%@.";
+
+/* Format string for glucose target range. (1: Min target)(2: Max target)(3: glucose unit) */
+"%1$@ – %2$@ %3$@" = "%1$@ – %2$@ %3$@";
+
+/* Format string for carb ratio average. (1: value)(2: carb unit) */
+"%1$@ %2$@/U" = "%1$@ %2$@/单位";
+
+/* Formats (1: carb start time) and (2: carb absorption duration) */
+"%1$@ + %2$@" = "%1$@ + %2$@";
+
+/* Low reservoir alert format string. (1: Number of units remaining) */
+"%1$@ U left" = "%1$@ 单位 剩余";
+
+/* Low reservoir alert with time remaining format string. (1: Number of units remaining)(2: approximate time remaining) */
+"%1$@ U left: %2$@" = "%1$@ 单位 剩余: %2$@";
+
+/* The format for recommended temp basal rate and time. (1: localized rate number)(2: localized time) */
+"%1$@ U/hour @ %2$@" = "%1$@ 单位/小时 @ %2$@";
+
+/* The format string for the app name and version number. (1: bundle name)(2: bundle version) */
+"%1$@ v%2$@" = "%1$@ v%2$@";
+
+/* Formats (1: carb value) and (2: food type) */
+"%1$@: %2$@" = "%1$@: %2$@";
+
+/* Description of the prediction input effect for glucose momentum */
+"15 min glucose regression coefficient (b₁), continued with decay over 30 min" = "15分钟葡萄糖回归系数（b1），持续30分钟衰减";
+
+/* Description of the prediction input effect for retrospective correction */
+"30 min comparison of glucose prediction vs actual, continued with decay over 60 min" = "30分钟葡萄糖预测与实际比较，持续60分钟以上衰减";
+
+/* Subtitle of Fiasp preset */
+"A model based on the published absorption of Fiasp insulin." = "基于公布的Fiasp胰岛素吸收的模型";
+
+/* Subtitle of Rapid-Acting – Adult preset */
+"A model based on the published absorption of Humalog, Novolog, and Apidra insulin in adults." = "基于已公布的Humalog，Novolog和Apidra胰岛素在成人中吸收的模型。";
+
+/* Action to copy the recommended Bolus value to the actual Bolus Field */
+"AcceptRecommendedBolus" = "按照推荐的大剂量输注";
+
+/* The title of the Carbs On-Board graph */
+"Active Carbohydrates" = "活性碳水化合物";
+
+/* The string format describing active carbohydrates. (1: localized glucose value description) */
+"Active Carbohydrates: %@" = "活性碳水化合物: %@";
+
+/* The title of the Insulin On-Board graph */
+"Active Insulin" = "活性胰岛素";
+
+/* The string format describing active insulin. (1: localized insulin value description) */
+"Active Insulin: %@" = "活性胰岛素: %@";
+
+/* Title of the user activity for adding carbs */
+"Add Carb Entry" = "添加碳水化合物";
+
+/* Action sheet title selecting CGM
+   Title text for button to set up a CGM */
+"Add CGM" = "添加CGM";
+
+/* The label of the meal button */
+"Add Meal" = "添加用餐信息";
+
+/* Action sheet title selecting Pump
+   Title text for button to set up a new pump */
+"Add Pump" = "添加泵";
+
+/* Title text for button to set up a service */
+"Add Service" = "Add Service";
+
+/* The title of the section containing algorithm settings */
+"Algorithm Settings" = "算法设置";
+
+/* Confirmation message for deleting a CGM */
+"Are you sure you want to delete this CGM?" = "确定要删除该CGM数据源？";
+
+/* Confirmation message for deleting a service */
+"Are you sure you want to delete this service?" = "Are you sure you want to delete this service?";
+
+/* Format fragment for a specific time */
+"at %@" = "%@分钟内";
+
+/* The message displayed during a device authentication prompt for bolus specification */
+"Authenticate to Bolus %@ Units" = "解锁以输注大剂量 %@ 单位";
+
+/* Details for configuration error when basal rate schedule is missing */
+"Basal Rate Schedule" = "基础率表";
+
+/* The title of the basal rate profile screen
+   The title text for the basal rate schedule */
+"Basal Rates" = "基础率";
+
+/* The label of the bolus entry button
+   The notification title for a bolus failure */
+"Bolus" = "大剂量";
+
+/* The format string for bolus progress. (1: delivered volume)(2: total volume) */
+"Bolused %1$@ of %2$@" = "大剂量已输注%1$@ of %2$@";
+
+/* The format string for bolus in progress showing total volume. (1: total volume) */
+"Bolusing %1$@" = "%1$@大剂量注射中";
+
+/* The title of the cancel action in an action sheet */
+"Cancel" = "取消";
+
+/* The title of the cell indicating a bolus is being canceled */
+"Canceling Bolus" = "取消大剂量";
+
+/* Details for missing data error when carb effects are missing */
+"Carb effects" = "碳水效果";
+
+/* The title of the carb ratios schedule screen
+   The title text for the carb ratio schedule */
+"Carb Ratios" = "碳水化合物吸收率";
+
+/* Title of the prediction input effect for carbohydrates */
+"Carbohydrates" = "碳水化合物";
+
+/* Description of the prediction input effect for carbohydrates. (1: The glucose unit string) */
+"Carbs Absorbed (g) ÷ Carb Ratio (g/U) × Insulin Sensitivity (%1$@/U)" = "已吸收碳水化合物（克）÷碳水化合物吸收率（克 / 单位）×胰岛素敏感系数 (%1$@/单位)";
+
+/* The notification alert describing a low pump battery */
+"Change the pump battery immediately" = "立即更换胰岛素泵电池";
+
+/* The notification alert describing an empty pump reservoir */
+"Change the pump reservoir now" = "立即更换储药器";
+
+/* Details for configuration error when one or more loop settings are missing */
+"Check settings" = "检查设置";
+
+/* Recovery suggestion when reservoir data is missing */
+"Check that your pump is in range" = "请检查你的泵是否在范围内";
+
+/* Recovery suggestion when glucose data is missing */
+"Check your CGM data source" = "请检查你的动态血糖数据来源";
+
+/* The title text for the looping enabled switch cell */
+"Closed Loop" = "开启闭环";
+
+/* The title of the action used to dismiss an error alert */
+"com.loudnate.LoopKit.errorAlertActionTitle" = "OK";
+
+/* The title of the configuration section in settings */
+"Configuration" = "配置";
+
+/* The error message displayed for configuration errors. (1: configuration error details) */
+"Configuration Error: %1$@" = "配置错误：%1$@";
+
+/* The title of the continuous glucose monitor section in settings */
+"Continuous Glucose Monitor" = "连续葡萄糖监测";
+
+/* The title of the glucose target range schedule screen
+   The title text for the glucose target range schedule */
+"Correction Range" = "修正范围";
+
+/* Message when offering bolus recommendation even though bg is below range. (1: glucose value) */
+"Current glucose of %1$@ is below correction range." = "当前葡萄糖%1$@低于修正范围";
+
+/* The title of the cell indicating a generic temporary override is enabled */
+"Custom Override" = "自定义覆盖";
+
+/* The title of the button to remove the credentials for a service */
+"Delete Account" = "删除账户";
+
+/* Button title to delete CGM */
+"Delete CGM" = "删除CGM数据源";
+
+/* Button title to delete a service */
+"Delete Service" = "Delete Service";
+
+/* Title text for delivery limits */
+"Delivery Limits" = "输注限制";
+
+/* The action hint of the workout mode toggle button when enabled */
+"Disables" = "禁用";
+
+/* The action hint of the workout mode toggle button when disabled */
+"Enables" = "启用";
+
+/* The placeholder text instructing users to enter a suspend treshold */
+"Enter suspend threshold" = "输入暂停阈值";
+
+/* The alert title for an error while canceling a bolus */
+"Error Canceling Bolus" = "无法取消大剂量";
+
+/* The alert title for a resume error */
+"Error Resuming" = "无法恢复输注";
+
+/* The subtitle format describing eventual glucose. (1: localized glucose value description) */
+"Eventually %@" = "最终 %@";
+
+/* The title of the alert describing a maximum bolus validation error */
+"Exceeds Maximum Bolus" = "超过大剂量最大输注限制";
+
+/* Title of insulin model preset */
+"Fiasp" = "Fiasp";
+
+/* The format string used to describe a finite workout targets duration */
+"For %1$@" = "对于 %1$@";
+
+/* The title of the glucose and prediction graph */
+"Glucose" = "葡萄糖";
+
+/* The error message when glucose data is too old to be used. (1: glucose data age in minutes) */
+"Glucose data is %1$@ old" = "葡萄糖%1$@分钟未更新";
+
+/* Description of error when glucose data is missing */
+"Glucose data not available" = "血糖数据不可用";
+
+/* Title of the prediction input effect for glucose momentum */
+"Glucose Momentum" = "葡萄糖增量预测算法";
+
+/* The title of a target alert action specifying an indefinitely long workout targets duration */
+"Indefinitely" = "永久";
+
+/* Title of the prediction input effect for insulin */
+"Insulin" = "胰岛素";
+
+/* Description of the prediction input effect for insulin */
+"Insulin Absorbed (U) × Insulin Sensitivity (%1$@/U)" = "已吸收胰岛素×胰岛素敏感系数";
+
+/* The title of the insulin delivery graph */
+"Insulin Delivery" = "已输注胰岛素";
+
+/* Details for missing data error when insulin effects are missing */
+"Insulin effects" = "胰岛素效果";
+
+/* Details for configuration error when insulin model is missing
+   The title text for the insulin model setting row */
+"Insulin Model" = "胰岛素模型";
+
+/* The title of the insulin sensitivities schedule screen
+   The title text for the insulin sensitivity schedule */
+"Insulin Sensitivities" = "胰岛素敏感系数";
+
+/* The error message when invalid data was encountered. (1: details of invalid data) */
+"Invalid data: %1$@" = "无效数据: %1$@";
+
+/* The title text for the issue report cell */
+"Issue Report" = "反馈问题";
+
+/* Glucose HUD accessibility hint */
+"Launches CGM app" = "启动CGM软件";
+
+/* The loading message for the diagnostic report screen */
+"Loading..." = "读取中...";
+
+/* The notification title for a loop failure */
+"Loop Failure" = "Loop失败";
+
+/* The notification alert describing a long-lasting loop failure. The substitution parameter is the time interval since the last loop */
+"Loop has not completed successfully in %@" = "Loop运行异常 %@";
+
+/* The error message for missing data. (1: missing data details) */
+"Missing data: %1$@" = "数据缺失: %1$@";
+
+/* Details for missing data error when momentum effects are missing */
+"Momentum effects" = "葡萄糖动量效应";
+
+/* Sensor state description for the non-valid state */
+"Needs Attention" = "请注意";
+
+/* The error message displayed for device connection errors. */
+"No connected devices, or failure during device connection" = "没有连接的设备，或设备连接期间发生故障";
+
+/* The title text for the override presets */
+"Override Presets" = "覆盖预设置";
+
+/* The label of the pre-meal mode toggle button */
+"Pre-Meal Targets" = "餐前目标";
+
+/* Message when offering bolus recommendation even though bg is below range and minBG is in future. (1: glucose time)(2: glucose number) */
+"Predicted glucose at %1$@ is %2$@." = "预测%1$@时的葡萄糖是%2$@";
+
+/* Notice message when recommending bolus when BG is below the suspend threshold. (1: glucose value) */
+"Predicted glucose of %1$@ is below your suspend threshold setting." = "预测葡萄糖%1$@低于您的暂停阈值设置";
+
+/* Format string describing retrospective glucose prediction comparison. (1: Predicted glucose)(2: Actual glucose)(3: difference) */
+"Predicted: %1$@\nActual: %2$@ (%3$@)" = "预测值: %1$@\n实际值: %2$@ (%3$@)";
+
+/* The title of the pump section in settings */
+"Pump" = "胰岛素泵";
+
+/* The notification title for a low pump battery */
+"Pump Battery Low" = "胰岛素泵电量低";
+
+/* The error message when pump data is too old to be used. (1: pump data age in minutes) */
+"Pump data is %1$@ old" = "胰岛素泵数据%1$@分钟未更新";
+
+/* Details for configuration error when pump manager is missing */
+"Pump Manager" = "泵管理";
+
+/* The notification title for an empty pump reservoir */
+"Pump Reservoir Empty" = "储药器药量已用完";
+
+/* The notification title for a low pump reservoir */
+"Pump Reservoir Low" = "药量低";
+
+/* The title of the cell indicating the pump is suspended */
+"Pump Suspended" = "泵已暂停输注";
+
+/* Title of insulin model preset */
+"Rapid-Acting – Adults" = "速效胰岛素 - 成人模型";
+
+/* Title of insulin model preset */
+"Rapid-Acting – Children" = "速效胰岛素 - 儿童模型";
+
+/* The error message when a recommendation has expired. (1: age of recommendation in minutes) */
+"Recommendation expired: %1$@ old" = "%1$@分钟前推荐剂量已过期";
+
+/* The title of the cell displaying a recommended temp basal value */
+"Recommended Basal" = "推荐基础率";
+
+/* Accessibility hint describing recommended bolus units */
+"Recommended Bolus: %@ Units" = "推荐大剂量：%@单位";
+
+/* Details for missing data error when reservoir data is missing */
+"Reservoir" = "储药器";
+
+/* Title of the prediction input effect for retrospective correction */
+"Retrospective Correction" = "回顾性修正";
+
+/* The title of the notification action to retry a bolus command */
+"Retry" = "重试";
+
+/* The title of the services section in settings */
+"Services" = "服务";
+
+/* The label of the settings button */
+"Settings" = "设置";
+
+/* Loop Completion HUD accessibility hint */
+"Shows last loop error" = "显示Loop上一次的错误";
+
+/* Format fragment for a start time */
+"since %@" = "自从%@分钟前";
+
+/* The format for the description of a temporary override start date */
+"starting at %@" = "开始于 %@";
+
+/* The title of the cell indicating a bolus is being sent */
+"Starting Bolus" = "开始输注大剂量";
+
+/* The title text in settings */
+"Suspend Threshold" = "暂停阈值";
+
+/* The subtitle of the cell displaying an action to resume insulin delivery */
+"Tap to Resume" = "点击恢复输注";
+
+/* Subtitle description of Walsh insulin model setting */
+"The legacy model used by Loop, allowing customization of action duration." = "Loop使用的默认模型参数，您可以自行修改胰岛素代谢时间。";
+
+/* Body of the alert describing a maximum bolus validation error. (1: The localized max bolus value) */
+"The maximum bolus amount is %@ Units" = "大剂量输注最大限制为%@单位";
+
+/* The short unit display string for international units of insulin */
+"U" = "U";
+
+/* The format for the description of a temporary override end date */
+"until %@" = "直到 %@";
+
+/* The title of the alert controller used to select a duration for workout targets */
+"Use Workout Glucose Targets" = "使用运动状态的血糖目标";
+
+/* Title of insulin model setting */
+"Walsh" = "Walsh";
+
+/* Explanation of suspend threshold */
+"When current or forecasted glucose is below the suspend threshold, Loop will not recommend a bolus, and will always recommend a temporary basal rate of 0 units per hour." = "当前或预测的葡萄糖低于暂停阈值时，Loop不推荐推注，并且总是建议每小时0单位的临时基础速率。";
+
+/* The label of the workout mode toggle button */
+"Workout Targets" = "运动模式血糖目标";
+
+/* The title of the nightscout site URL credential */
+"Site URL" = "网址";
+
+
+/* Title of the user activity for adding carbs */
+"Add Carb Entry" = "添加碳水化合物";
+
+/* Lesson subtitle */
+"Computes the percentage of glucose measurements within a specified range" = "计算在指定范围内的血糖测量值的百分比";
+
+/* Title of the button to begin lesson execution */
+"Continue" = "继续";
+
+/* The short unit display string for grams */
+"g" = "克";
+
+/* Placeholder for upper range entry */
+"Maximum" = "最大";
+
+/* The short unit display string for milligrams of glucose per decilter */
+"mg/dL" = "毫克/分升";
+
+/* Placeholder for lower range entry */
+"Minimum" = "最小";
+
+/* The short unit display string for millimoles of glucose per liter */
+"mmol/L" = "毫摩尔/升";
+
+/* Lesson result text for no data */
+"No data available" = "无数据";
+
+/* Section title for glucose range */
+"Range" = "范围";
+
+/* Title of config entry */
+"Start Date" = "开始日期";
+
+/* Lesson title */
+"Time in Range" = "在目标范围的时间";
+
+/* The short unit display string for international units of insulin */
+"U" = "单位";
+
+/* Lesson subtitle */
+"Visualizes the most frequent glucose values by time of day" = "全天血糖数据";
+
+/* Unit string for a count of calendar weeks */
+"Weeks" = "周";
+
+/* Carb entry section footer text explaining absorption time */
+"Choose a longer absorption time for larger meals, or those containing fats and proteins. This is only guidance to the algorithm and need not be exact." = "如果吃大餐或者是以脂肪和蛋白为主的食物，请选择比较长的吸收时间。该设置仅为算法的一般原则，具体请根据自身情况调整";
+
+
+/* The format for an insulin needs percentage. */
+"%@%% of normal insulin" = "%@%% 胰岛素";
+
+/* Accessibility format string for (1: localized volume)(2: time) */
+"%1$@ units remaining at %2$@" = "%1$@ 单位剩余在 %2$@";
+
+/* Title of the carb entry absorption time cell */
+"Absorption Time" = "吸收时间";
+
+/* The title for the override emoji activity section */
+"Activity" = "活动";
+
+/* The title of the button to add the credentials for a service */
+"Add Account" = "添加账户";
+
+/* The title of the view controller to create a new carb entry */
+"Add Carb Entry" = "添加碳水";
+
+/* Action sheet confirmation message for pump history deletion */
+"Are you sure you want to delete all history entries?" = "确定要删除所有输入的历史数据吗？";
+
+/* Action sheet confirmation message for reservoir deletion */
+"Are you sure you want to delete all reservoir values?" = "确定要删除所有的储药器数据吗？";
+
+/* Describes a percentage decrease in overall insulin needs */
+"Basal, bolus, and correction insulin dose amounts are decreased by %@%%." = "基础率,大剂量及追加剂量将以%@%%减少";
+
+/* Describes a percentage increase in overall insulin needs */
+"Basal, bolus, and correction insulin dose amounts are increased by %@%%." = "基础率,大剂量及追加剂量将以%@%%增加";
+
+/* Describes a lack of change in overall insulin needs */
+"Basal, bolus, and correction insulin dose amounts are unaffected." = "基础率,大剂量及追加剂量将不受该设置影响";
+
+/* The title of the cancel action in an action sheet */
+"Cancel" = "取消";
+
+/* The text for the override cancellation button */
+"Cancel Override" = "取消覆盖";
+
+/* Title text for suspend resume button when temp basal canceling */
+"Canceling Temp Basal" = "取消临时基础率";
+
+/* Footer text for customizing an override from a preset (1: preset name) */
+"Changes will only apply this time you enable the override. The default settings of %@ will not be affected." = "将仅会在启用时覆盖该设置,默认设置%@ 不受影响";
+
+/* Carb entry section footer text explaining absorption time */
+"Choose a longer absorption time for larger meals, or those containing fats and proteins. This is only guidance to the algorithm and need not be exact." = "如果吃大餐或者是以脂肪和蛋白为主的食物，请选择比较长的吸收时间。该设置仅为算法的一般原则，具体请根据自身情况调整";
+
+/* The format string describing the date of a COB value. The first format argument is the localized date. */
+"com.loudnate.CarbKit.COBDateLabel" = "在 %1$@";
+
+/* The format string describing the starting date of a total value. The first format argument is the localized date. */
+"com.loudnate.CarbKit.totalDateLabel" = "自从 %1$@";
+
+/* The format string describing the date of an IOB value. The first format argument is the localized date. */
+"com.loudnate.InsulinKit.IOBDateLabel" = "在 %1$@";
+
+/* The format string describing the starting date of a total value. The first format argument is the localized date. */
+"com.loudnate.InsulinKit.totalDateLabel" = "自从 %1$@";
+
+/* The title for the override emoji condition section */
+"Condition" = "条件";
+
+/* Title of the setup button to continue */
+"Continue" = "继续";
+
+/* The section footer of correction range schedule */
+"Correction range is the blood glucose range that you would like Loop to correct to." = "校正范围指Loop系统会主动调整胰岛素输注并将血糖保持在该范围内";
+
+/* The text for a custom override */
+"Custom" = "自定义";
+
+/* The title for the custom override entry screen */
+"Custom Override" = "自定义覆盖";
+
+/* Title of the carb entry date picker cell */
+"Date" = "日期";
+
+/* The title of the button to remove the credentials for a service */
+"Delete Account" = "删除账户";
+
+/* Button title to delete all objects */
+"Delete All" = "删除所有";
+
+/* The text for the override duration setting */
+"Duration" = "持续时间";
+
+/* The title of the view controller to edit an existing carb entry */
+"Edit Carb Entry" = "编辑碳水";
+
+/* The title for the override editing screen */
+"Edit Override" = "编辑新设置";
+
+/* Footer text for editing an active override (1: preset name) */
+"Editing affects only the active override. The default settings of %@ will not be affected." = "编辑仅会影响正在使用的“覆盖”设置,默认设置%@不受影响";
+
+/* The text for the indefinite override duration setting */
+"Enable Indefinitely" = "一直使用";
+
+/* The detail text describing an enabled setting */
+"Enabled" = "已启用";
+
+/* The placeholder text instructing users how to enter a maximum bolus */
+"Enter a number of units" = "输入单位量";
+
+/* The placeholder text instructing users how to enter a maximum basal rate */
+"Enter a rate in units per hour" = "输入每小时基础率";
+
+/* Section title for fast absorbing food */
+"Fast" = "快速";
+
+/* The description shown on the insulin sensitivity schedule interface. */
+"Insulin sensitivity describes how your blood glucose should respond to a 1 Unit dose of insulin. Smaller values mean more insulin will be given when above target. Values that are too small can cause dangerously low blood glucose." = "胰岛素敏感系数指每单位胰岛素可以造成的血糖变化.比较小的值意味着当血糖高于目标时需要更多的胰岛素,如果该值设置太小可能会造成严重低血糖,请谨慎设置该参数";
+
+/* Placeholder for maximum value in glucose range */
+"max" = "最大";
+
+/* The title text for the maximum basal rate value */
+"Maximum Basal Rate" = "最大基础率限制";
+
+/* The title text for the maximum bolus value */
+"Maximum Bolus" = "最大大剂量限制";
+
+/* Section title for medium absorbing food */
+"Medium" = "中等";
+
+/* Placeholder for minimum value in glucose range */
+"min" = "分钟";
+
+/* Alert action title to open error help */
+"More Info" = "更多信息";
+
+/* The text for the override preset name setting */
+"Name" = "名称";
+
+/* The title for the new override preset entry screen */
+"New Preset" = "新配置";
+
+/* Section title for no-carb food
+   The title for override emoji miscellaneous section */
+"Other" = "其他";
+
+/* The title text for the insulin sensitivity scaling setting */
+"Overall Insulin Needs" = "全部胰岛素需要";
+
+/* The title text for the override presets screen */
+"Override Presets" = "覆盖预设值";
+
+/* Text directing the user to configure override presets */
+"Override presets can be set up under the 'Configuration' section of the settings screen." = "覆盖预设置可以通过”设置”的”配置”来完成";
+
+/* The section title of glucose overrides */
+"Overrides" = "覆盖";
+
+/* Title for the pre-meal override range */
+"Pre-Meal" = "餐前模式";
+
+/* The section header text override presets */
+"PRESETS" = "预设";
+
+/* The title of the screen displaying a pump event */
+"Pump Event" = "胰岛素泵事件";
+
+/* The default placeholder string for a credential */
+"Required" = "需要";
+
+/* Title text for button to resume insulin delivery */
+"Resume Delivery" = "恢复输注";
+
+/* Title text for button when insulin delivery is in the process of being resumed */
+"Resuming" = "恢复中";
+
+/* The text for the override preset name field placeholder */
+"Running" = "运行中";
+
+/* Button text for saving glucose correction range schedule
+   Button text for saving insulin sensitivity schedule */
+"Save" = "保存";
+
+/* The section header text for a scheduled override */
+"SCHEDULED OVERRIDE" = "计划覆盖";
+
+/* Section title for slow absorbing food */
+"Slow" = "慢";
+
+/* The text for the override start time */
+"Start Time" = "启动时间";
+
+/* Title text for suspend resume button when temp basal starting */
+"Starting Temp Basal" = "启动临时寄出";
+
+/* Title text for button to suspend insulin delivery */
+"Suspend Delivery" = "暂停输注";
+
+/* Title text for button when insulin delivery is in the process of being stopped */
+"Suspending" = "正在暂停";
+
+/* The text for the override preset symbol setting */
+"Symbol" = "符号";
+
+/* The empty-state text for a configuration value */
+"Tap to set" = "点击设置";
+
+/* The text for the override target range setting */
+"Target Range" = "目标范围";
+
+/* The title for the override selection screen */
+"Temporary Override" = "临时覆盖";
+
+/* Alert body displayed absorption time greater than max (1: maximum absorption time) */
+"The maximum absorption time is %@" = "最大吸收时间为  %@";
+
+/* Alert body displayed for quantity greater than max (1: maximum quantity in grams) */
+"The maximum allowed amount is %@ grams" = "允许的最大量为 %@ g";
+
+/* The schedule table view header describing the configured time zone difference from the default time zone. The substitution parameters are: (1: time zone name)(2: +/-)(3: time interval) */
+"Times in %1$@%2$@%3$@" = "时间 %1$@%2$@%3$@";
+
+/* The unit string for units per hour */
+"U/hour" = "单位/小时";
+
+/* The unit string for units */
+"Units" = "单位";
+
+/* Accessibility value for an unknown value
+   The default title to use when an entry has none */
+"Unknown" = "未知";
+
+/* Label indicating validation is occurring */
+"Verifying" = "验证";
+
+/* Title of an alert containing a validation warning */
+"Warning" = "警告";
+
+/* Title for the workout override range */
+"Workout" = "锻炼/运动模式";
+
+/* Information about workout range relative to correction range */
+" higher " = "更高";
+
+/* Information about pre-meal range relative to correction range */
+" lower " = "更低";
+
+/* 下限锻炼信息文本格式（1：应用名称） */
+"%1$@ or your Glucose Safety Limit, whichever is higher" = "%1$@ 或您的葡萄糖安全限制，以两者中较高者为准";
+
+/* 餐前覆盖预设标题 */
+"🍽 Pre-Meal" = "🍽 餐前" ;
+
+/* 锻炼覆盖预设标题 */
+"🏃‍♂️ Workout" = "🏃‍♂️ 锻炼" ;
+
+/* 工程师未提供注释。*/
+"A card whose text will wrap onto multiple lines if I continue to type for long enough—this length should do" = "一张卡片，如果我继续打字足够长的时间，文本将自动换行-这个长度应该足够。" ;
+
+/* 目标范围和纠正范围之间差异的信息 */
+"A Correction Range is different. This will be a narrower range." = "纠正范围不同。这将是一个较窄的范围。" ;
+
+/* 工程师未提供注释。*/
+"A simple card" = "一个简单的卡片" ;
+
+/* 基础速率为0 U/hr的警告文本 */
+"A value of 0 U/hr means you will be scheduled to receive no basal insulin." = "0 U/hr的值意味着您将不会安排接受任何基础胰岛素。" ;
+
+/* 无注释 */
+"Above dynamic data" = "上面的动态数据";
+
+/* 无注释 */
+"Above the save button" = "保存按钮上面";
+
+/* 无注释 */
+"Action Button" = "操作按钮";
+
+/* override历史时长的文本 */
+"Active Duration" = "激活时长";
+
+/* 添加新的计划条目的确认按钮文本 */
+"Add" = "添加";
+
+/* 疗法设置的身份验证提示字符串 */
+"Authenticate to save therapy setting" = "身份验证以保存疗法设置";
+
+/* 返回导航按钮标题 */
+"Back" = "返回";
+
+/* 多值基础速率警告的标题文本 */
+"Basal Rates" = "基础速率";
+
+/* 无注释 */
+"Below dynamic data" = "下面的动态数据";
+
+/* 无注释 */
+"Bottom" = "底部";
+
+/* 多值碳水化合物比例警告的标题文本 */
+"Carb Ratios" = "碳水化合物系数";
+
+/* Footer text for customizing from a preset (1: preset name) */
+"Changes will only apply this time you enable the preset. The default settings of %@ will not be affected." = "更改只会在启用预设时应用。%@的默认设置不会受到影响。";
+
+/* Text to close informational page */
+"Close" = "关闭";
+
+/* The title of the action used to dismiss an error alert */
+"com.loudnate.LoopKit.errorAlertActionTitle" = "com.loudnate.LoopKit.errorAlertActionTitle";
+
+/* Accessibility label for ProgressIndicatorView when showIndeterminantProgress */
+"Completed." = "已完成。";
+
+/* The button text for confirming the setting */
+"Confirm Setting" = "确认设置";
+
+/* No comment provided by engineer. */
+"content" = "内容";
+
+/* Title text for multi-value correction value warning */
+"Correction Values" = "校正数值";
+
+/* The title for the custom preset selection screen */
+"Custom Preset" = "自定义预设";
+
+/* The title of the button to remove the credentials for a service */
+"Delete" = "删除";
+
+/* Title text for crossed thresholds guardrail warning */
+"Delivery Limits" = "输送限制";
+
+/* Information about delivery limits */
+"Delivery Limits are safety guardrails for your insulin delivery." = "输送限制是您胰岛素输送的安全保障。";
+
+/* The text for the custom preset disable button */
+"Disable Preset" = "禁用预设";
+
+/* Video player done button label */
+"Done" = "完成";
+
+/* No comment provided by engineer. */
+"Dynamic component #%@" = "动态组件＃%@";
+
+/* No comment provided by engineer. */
+"Dynamic data %@" = "动态数据%@";
+
+/* The title for the enabled custom preset editing screen */
+"Edit" = "编辑";
+
+/* Footer text for editing an enabled custom preset (1: preset name) */
+"Edits persist only until the preset is disabled. The default settings of %@ will not be affected." = "编辑仅在启用预设时有效。%@的默认设置不会受到影响。";
+
+/* The button text for enabling a temporary override */
+"Enable" = "启用";
+
+/* The text for the override start time */
+"End Time" = "结束时间";
+
+/* Format string for accessibility label for value entry. (1: value label) */
+"Enter %1$@ value" = "输入%1$@数值";
+
+/* Segmented button title for insulin delivery log event history */
+"Event History" = "事件历史记录";
+
+/* No comment provided by engineer. */
+"Example" = "示例";
+
+
+/* 胰岛素模型设置描述（1：应用程序名称）（2：模型数量）*/
+"For fast acting insulin, %1$@ assumes it is actively working for 6 hours. You can choose from %2$@ different models for how the app measures the insulin’s peak activity." = "对于快速作用的胰岛素，%1$@ 假定其在积极工作6个小时。您可以选择%2$@不同的模型来衡量应用程序衡量胰岛素的峰值活动。";
+
+/* 关于校正范围格式的信息（1：应用程序名称）*/
+"For this range, choose the specific glucose value (or range of values) that you want %1$@ to aim for in adjusting your basal insulin." = "对于这个范围，选择您想要 %1$@ 调整您的基础胰岛素以达到特定的血糖值（或值范围）。";
+
+/* 治疗设置的支持按钮 */
+"Get help with Therapy Settings" = "获取治疗设置的帮助";
+
+/* 确认警报上的返回操作的文本 */
+"Go Back" = "返回";
+
+/* 高基础速率警告的标题文本 */
+"High Basal Rate" = "高基础速率";
+
+/* 高碳水化合物比率警告的标题文本 */
+"High Carb Ratio" = "高碳水化合物比率";
+
+/* 高修正值警告的标题文本 */
+"High Correction Value" = "高修正值";
+
+/* 高血糖安全限制警告的标题文本 */
+"High Glucose Safety Limit" = "高血糖安全限制";
+
+/* 高胰岛素敏感性警告的标题文本 */
+"High Insulin Sensitivity" = "高胰岛素敏感性";
+
+/* 高最大基础速率警告的标题文本 */
+"High Maximum Basal Rate" = "高最大基础速率";
+
+/* 高最大波卢斯警告的标题文本 */
+"High Maximum Bolus" = "高最大大剂量";
+
+/* 低餐前值警告的标题文本 */
+"High Pre-Meal Value" = "高餐前值";
+
+/* 高锻炼值警告的标题文本 */
+"High Workout Value" = "高锻炼值";
+
+/* 覆盖历史的文本 */
+"History" = "历史";
+
+/* Description of how to interact with summary screen */
+"If these settings look good to you, tap Save Settings to continue." = "如果这些设置看起来合适，请点击保存设置以继续。";
+
+/* Information about target range */
+"If you've used a CGM before, you're likely familiar with target range as a wide range of values you'd like for your glucose notification alerts, such as 70-180 mg/dL or 90-200 mg/dL." = "如果您以前使用过CGM，您可能熟悉目标范围，即您希望葡萄糖通知警报的广泛值范围，例如70-180毫克/分升或90-200毫克/分升。";
+
+/* Title text for insulin model */
+"Insulin Model" = "胰岛素模型";
+
+/* 多值胰岛素敏感性警告的标题文本 */
+"Insulin Sensitivities" = "胰岛素敏感性";
+
+/* 中断泵入剂量输入的描述（1：剂量类型的标题，2：加粗的值（如果没有值则为“?”），3：编程值（如果没有值则为“?”），4：单位） */
+"Interrupted %1$@: <b>%2$@</b> of %3$@ %4$@" = "中断 %1$@: <b>%2$@</b> / %3$@ %4$@";
+
+/* 守卫信息文本格式 */
+"It can be set as low as %1$@. It can be set as high as %2$@." = "它可以设置为低至 %1$@，也可设置为高至 %2$@。";
+
+/* 低基础胰岛素速率警告的标题文本 */
+"Low Basal Rate" = "低基础胰岛素速率";
+
+/* 低碳水化合物比率警告的标题文本 */
+"Low Carb Ratio" = "低碳水化合物比率";
+
+/* 低校正值警告的标题文本 */
+"Low Correction Value" = "低校正值";
+
+/* 低血糖安全限制警告的标题文本 */
+"Low Glucose Safety Limit" = "低血糖安全限制";
+
+/* 低胰岛素敏感性警告的标题文本 */
+"Low Insulin Sensitivity" = "低胰岛素敏感性";
+
+/* 低最大基础胰岛素速率警告的标题文本 */
+"Low Maximum Basal Rate" = "低最大基础胰岛素速率";
+
+/* 低最大泵入剂量警告的标题文本 */
+"Low Maximum Bolus" = "低最大泵入剂量";
+
+/* 低餐前值警告的标题文本 */
+"Low Pre-Meal Value" = "低餐前值";
+
+/* 低锻炼值警告的标题文本 */
+"Low Workout Value" = "低锻炼值";
+
+/* 胰岛素模型预设的标题 - Lyumjev */
+"Lyumjev" = "Lyumjev";
+
+/* 工程师未提供评论 */
+"Middle" = "中间";
+
+/* 工程师未提供评论 */
+"more content" = "更多内容";
+
+/* 添加新日程条目的小型模式对话框的标题 */
+"New Entry" = "新建条目";
+
+/* 提示零基础速率警告的标题文本 */
+"No Basal Insulin" = "无基础胰岛素";
+
+/* 覆盖历史视图的标题 */
+"Override History" = "覆盖历史记录";
+
+/* 多值餐前值警告的标题文本 */
+"Pre-Meal Values" = "餐前值";
+
+/* 处方部分的标题 */
+"Prescription" = "处方";
+
+/* ProgressIndicatorView在显示不确定进度时的无障碍标签 */
+"Progressing." = "正在进展。";
+
+/* 基础输送状态未设置时暂停恢复按钮的标题文本 */
+"Pump Inoperable" = "泵无法操作";
+
+/* 胰岛素模型预设的标题-快速作用成人 */
+"Rapid-Acting – Adults" = "快速作用 - 成人";
+
+/* 胰岛素模型预设的标题-快速作用儿童 */
+"Rapid-Acting – Children" = "快速作用 - 儿童";
+
+/* 胰岛素输送记录储水池历史的分段按钮标题 */
+"Reservoir" = "储药器";
+
+/* 总结说明部分的标题 */
+"Review and Save Settings" = "查看并保存设置";
+
+/* 如何与总结屏幕进行交互的说明 */
+"Review your therapy settings below. If you’d like to edit any of these settings, tap Back to go back to that screen." = "请查看以下疗法设置。如果您想编辑任何这些设置，请点击“返回”返回该屏幕。";
+
+/* 确认基础速率是否超出推荐范围的警报标题 */
+"Save Basal Rates?" = "保存基础速率？";
+
+/* 确认胰岛素比例超出推荐范围的警报标题 */
+"Save Carb Ratios?" = "保存碳水系数？";
+
+/* 确认更正范围超出推荐范围的警报标题 */
+"Save Correction Range(s)?" = "保存更正范围？";
+
+/* 确认输送限制超出推荐范围的警报标题 */
+"Save Delivery Limits?" = "保存输送限制？";
+
+/* 确认血糖安全限制超出推荐范围的警报标题 */
+"Save Glucose Safety Limit?" = "保存血糖安全限制？";
+
+/* 确认胰岛素敏感度超出推荐范围的警报标题 */
+"Save Insulin Sensitivities?" = "保存胰岛素敏感度？";
+
+/* 确认餐前范围覆盖超出推荐范围的警报标题 */
+"Save Pre-Meal Range?" = "保存餐前范围？";
+
+/* 确认锻炼范围覆盖超出推荐范围的警报标题 */
+"Save Workout Range?" = "保存锻炼范围？";
+
+/* 配置页面保存按钮文本 */
+"Saving..." = "保存中...";
+
+/* 预设计划页面标题 */
+"SCHEDULED PRESET" = "预设计划";
+
+/* 典型最大基础率信息 */
+"Some users choose a value 2, 3, or 4 times their highest scheduled basal rate." = "一些用户选择最高计划基础率的2、3或4倍。";
+
+/* 处方描述文本格式（1：提供者名称，2：处方日期） */
+"Submitted by %1$@, %2$@" = "由%1$@提交，%2$@处方";
+
+/* 支持部分标题 */
+"Support" = "支持";
+
+/* 工程师未提供任何评论 */
+"Switch Preview State" = "切换预览状态";
+
+/* Text directing the user to configure their first custom preset */
+"Tap '+' to create a new custom preset." = "点击 '+' 创建新的自定义预设。";
+
+/* Description of pre-meal mode */
+"Temporarily lower your glucose target before a meal to impact post-meal glucose spikes." = "暂时降低您的血糖目标，以影响餐后血糖飙升。";
+
+/* Description of workout mode */
+"Temporarily raise your glucose target before, during, or after physical activity to reduce the risk of low glucose events." = "在运动前、期间或后暂时提高您的血糖目标，以降低低血糖的风险。";
+
+/* Information about workout range relative to correction range */
+"than your Correction Range." = "比您的校正范围高。";
+
+/* Description for selection when no insulin type is selected. */
+"The currently selected fast acting insulin model will be used as a default." = "当前选择的快速作用胰岛素模型将被用作默认值。";
+
+/* Subtitle description of Walsh insulin model setting */
+"The legacy model used by Loop, allowing customization of action duration." = "Loop使用的传统模型，允许自定义作用时间。";
+
+/* Information about adult insulin model */
+"The rapid-acting adult model assumes peak activity at 75 minutes." = "快速作用的成人模型假定在75分钟时达到峰值活性。";
+
+/* Information about child insulin model */
+"The rapid-acting child model assumes peak activity at 65 minutes." = "快速作用的儿童模型假定在65分钟时达到峰值活性。";
+
+/* Information about basal rate scheduling */
+"The schedule starts at midnight and cannot contain a rate of 0 U/hr." = "计划从午夜开始，不可以包含0单位/小时的速率。";
+
+/* Therapy Settings screen title */
+"Therapy Settings" = "治疗设置";
+
+/* No comment provided by engineer. */
+"Therapy Settings Support Placeholder" = "治疗设置支持占位符";
+
+/* Subtitle of afrezza preset */
+"This model assumes peak insulin activity at 19 minutes." = "该模型假定胰岛素峰值活性发生在19分钟时。";
+
+/* Subtitle of Lyumjev preset */
+"This model assumes peak insulin activity at 55 minutes." = "该模型假定胰岛素峰值活性发生在55分钟时。";
+
+
+/* Subtitle of Rapid-Acting – Children preset */
+"This model assumes peak insulin activity at 65 minutes." = "该模型假定胰岛素在65分钟时峰值活性。";
+
+/* Subtitle of Rapid-Acting – Adult preset */
+"This model assumes peak insulin activity at 75 minutes." = "该模型假定胰岛素在75分钟时峰值活性。";
+
+/*Information about workout range relative to correction range */
+"This will typically be" = "这通常是";
+
+/* Label for offset from midnight picker */
+"Time" = "时间";
+
+/* No comment provided by engineer. */
+"To be implemented" = "待实现";
+
+/* No comment provided by engineer. */
+"Top" = "顶部";
+
+/* No comment provided by engineer. */
+"Top component" = "顶部组件";
+
+/* The text indicating Total for Daily Schedule Basal */
+"Total" = "总计";
+
+/* The text indicating U/day for Daily Schedule Basal */
+"U/day" = "U/天";
+
+/* Alert title when error occurs while saving a schedule */
+"Unable to Save" = "无法保存";
+
+/* Title for selection when no insulin type is selected. */
+"Unset" = "未设置";
+
+/* Placeholder text until value is entered */
+"Value" = "数值";
+
+/* The title for the override editing screen */
+"View Override" = "查看覆盖设置";
+
+
+/* 关于基础速率的信息 */
+"Your Basal Rate of insulin is the number of units per hour that you want to use to cover your background insulin needs." = "您的胰岛素基础速率是每小时您想使用的单位数，用于覆盖您的胰岛素基础需求。";
+
+/* 餐前下限信息文本 */
+"your Glucose Safety Limit" = "您的血糖安全限值";
+
+/* 免责声明 */
+"Your healthcare provider can help you choose a Correction Range that's right for you." = "您的医疗保健提供者可以帮助您选择适合您的纠正范围。";
+
+/* 胰岛素敏感因子的描述 */
+"Your Insulin Sensitivity Factor (ISF) is the drop in glucose expected from one unit of insulin." = "您的胰岛素敏感因子（ISF）是一单位胰岛素注射后预期降低的血糖。";
+
+/* 餐前范围格式的信息（1：应用程序名称） */
+"Your Pre-Meal Range should be the glucose value (or range of values) you want %1$@ to target by the time you take your first bite of your meal. This range will be in effect when you activate the Pre-Meal Preset button." = "您的餐前范围应该是您希望%1$@在您吃第一口餐前时达到的血糖值（或值范围）。当您激活餐前预设按钮时，该范围将生效。";
+
+/* 免责声明 */
+"Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as you feel comfortable." = "与您的医疗保健提供者合作，选择比您最高预定基础速率更高的值，但让您感觉舒适的时保守或积极。";
+
+/* 关于锻炼范围格式的信息（1：应用程序名称） */
+"Workout Range is the glucose value or range of values you want %1$@ to target during activity. This range will be in effect when you activate the Workout Preset button." = "锻炼范围是您希望%1$@在活动期间达到的血糖值或值范围。当您激活锻炼预设按钮时，该范围将生效。";
+
+/* 多值锻炼值警告的标题文本 */
+"Workout Values" = "锻炼数值";
+
+/* 添加比例的说明 */
+"You can add different carb ratios for different times of day by using the ➕." = "您可以使用➕为不同时间段添加不同的碳水化合物比例。";
+
+/* 添加胰岛素敏感性的说明 */
+"You can add different insulin sensitivities for different times of day by using the ➕." = "您可以使用➕为不同时间段添加不同的胰岛素敏感性。";
+
+/* 添加配置范围的说明 */
+"You can add different ranges for different times of day by using the ➕." = "您可以使用➕为不同时间段添加不同的范围。";
+
+/* 添加范围的说明 */
+"You can add entries for different times of day by using the ➕." = "您可以使用➕为不同时间段添加条目。";
+
+/* 编辑设置的说明 */
+"You can edit a setting by tapping into any line item." = "您可以通过点击任何行项目来编辑设置。";
+
+/* 编辑设置的说明 */
+"You can edit the setting by tapping into the line item." = "您可以通过点击行项目来编辑设置。";
+
+/* The format string for the app name and version number. (1: bundle name)(2: bundle version) */
+"%1$@ v%2$@" = "%1$@ v%2$@";
+
+/* Title of the user activity for adding carbs */
+"Add Carb Entry" = "添加碳水化合物";
+
+/* Lesson subtitle */
+"Computes the percentage of glucose measurements within a specified range" = "计算在指定范围内的血糖测量值的百分比";
+
+/* Title of the button to begin lesson execution */
+"Continue" = "继续";
+
+/* The short unit display string for decibles */
+"dB" = "dB";
+
+/* The short unit display string for grams */
+"g" = "克";
+
+/* Placeholder for upper range entry */
+"Maximum" = "最大";
+
+/* The short unit display string for milligrams of glucose per decilter */
+"mg/dL" = "毫克/分升";
+
+/* Placeholder for lower range entry */
+"Minimum" = "最小";
+
+/* The short unit display string for millimoles of glucose per liter */
+"mmol/L" = "毫摩尔/升";
+
+/* Lesson result text for no data */
+"No data available" = "无数据";
+
+/* Format string for combining localized numeric value and unit. (1: numeric value)(2: unit) */
+"QUANTITY_VALUE_AND_UNIT" = "%1$@ %2$@";
+
+/* Section title for glucose range */
+"Range" = "范围";
+
+/* Title of config entry */
+"Start Date" = "开始日期";
+
+/* Lesson title */
+"Time in Range" = "在目标范围的时间";
+
+/* The short unit display string for international units of insulin */
+"U" = "单位";
+
+/* Lesson subtitle */
+"Visualizes the most frequent glucose values by time of day" = "全天血糖数据";
+
+/* Unit string for a count of calendar weeks */
+"Weeks" = "周";
+
+
+/* Status row title for premeal override enabled (leading space is to separate from symbol) */
+" Pre-meal Preset" = "餐前预设";
+
+/* remaining time in setting's profile expiration section */
+" remaining" = "剩余时间";
+
+/* Warning text for when Notifications or Critical Alerts Permissions is disabled */
+" Safety Notifications are OFF" = "安全通知已关闭";
+
+/* Status row title for workout override enabled (leading space is to separate from symbol) */
+" Workout Preset" = "锻炼预设";
+
+/* String denoting lack of a recommended bolus amount in the simple bolus calculator */
+"–" = "–";
+
+/* No comment provided by engineer. */
+"– –" = "– –";
+
+/* No glucose value representation (3 dashes for mg/dL) */
+"– – –" = "– – –";
+
+/* Full stop character */
+"." = "。";
+
+/* Estimated remaining duration with more than a minute */
+"%@ remaining" = "剩余时间%@";
+
+/* Alert text for failing to cancel temp basal (1: reason description, 2: app name) */
+"%@%@ was unable to cancel your current temporary basal rate, which is higher than the new Max Basal limit you have set. This may result in higher insulin delivery than desired.\n\nConsider suspending insulin delivery manually and then immediately resuming to enact basal delivery with the new limit in place." = "%@%@无法取消当前的临时基础代谢率，该代谢率高于您设置的新最大基础代谢率。这可能导致更高的胰岛素输送。\n\n考虑手动暂停胰岛素输送，然后立即恢复以执行新限制的基础输送。";
+
+/* Adds a full-stop to a statement (1: statement, 2: full stop character) */
+"%1@%2@" = "%1@%2@";
+
+/* Format string combining carb entry quantity and absorption time emoji */
+"%1$@ %2$@" = "%1$@ %2$@";
+
+/* Alert message for closed loop off informational modal. (1: app name) */
+"%1$@ is operating with Closed Loop in the OFF position. Your pump and CGM will continue operating, but the app will not adjust dosing automatically." = "%1$@ 已关闭闭环。您的泵和CGM将继续运行，但该应用程序不会自动调整剂量。";
+
+/* Message for alert shown when alert acknowledgement fails for a device, and the device does not provide a LocalizedError. (1: app name) */
+"%1$@ is unable to clear the alert from your device" = "%1$@ 无法清除设备上的警报";
+
+
+/* Message for alert shown when delivery status is uncertain. (1: app name) */
+"%1$@ is unable to communicate with your insulin pump. The app will continue trying to reach your pump, but insulin delivery information cannot be updated and no automation can continue.\nYou can wait several minutes to see if the issue resolves or tap the button below to learn more about other options."  = "%1$@ 暂时无法与您的胰岛素泵通信。该应用程序将继续尝试连接您的泵，但胰岛素输送信息无法更新，任何自动化都无法继续。\n您可以等待几分钟，看看问题是否解决，或者点击下面的按钮了解其他选项的详细信息。";
+
+/* Time change alert title */
+"%1$@ Time Settings Need Attention"  = "%1$@时间设置需要注意";
+
+/* Reservoir entry (1: volume value) */
+"%1$@ U"  = "%1$@ U";
+
+/* Format string for body for notification of upcoming provisioning profile expiration. (1: app name) (2: amount of time until expiration */
+"%1$@ will stop working in %2$@. You will need to update before that, with a new provisioning profile."  = "%1$@将在%2$@中停止工作。在此之前，您需要使用新的设置配置文件进行更新";
+
+/* Description of a bolus dose entry (1: title for dose type, 2: value (? if no value) in bold, 3: unit) */
+"%1$@: <b>%2$@</b> %3$@"  = "%1$@：<b>%2$@</b>%3$@";
+
+/* Estimated remaining duration with a few seconds */
+"A few seconds remaining"  = "还有几秒钟";
+
+/* Alert message for a manual glucose entry out of range error */
+"A manual glucose entry must be between %@ and %@"  = "手动葡萄糖输入必须介于%@和%@之间";
+
+/* Warning for simple bolus when glucose entry is out of range. (1: upper bound) (2: lower bound) */
+"A manual glucose entry must be between %1$@ and %2$@."  = "手动葡萄糖输入必须介于%1$@和%2$@之间。";
+
+/* Software update available section footer (1: app name) */
+"A new version of %@ is available and is recommended to continue using the app."  = "%@的新版本可用，建议您继续使用该应用程序。";
+
+/* Required software update section footer (1: app name) */
+"A new version of %@ is available."  = "%@的新版本可用。";
+
+/* Alert message for a missing pump error */
+"A pump must be configured before a bolus can be delivered."  = "必须先配置泵，然后才能输送大剂量。";
+
+/* Title describing quantity of still-absorbing carbohydrates */
+"Active Carbs"  = "活性炭水";
+
+/* No comment provided by engineer. */
+"Adjusted for"  = "调整为";
+
+/*Title of alert management screen */
+"Alert Management"  = "警报管理";
+
+/*Notification & Critical Alert Permissions screen title */
+"Alert Permissions"  = "警报权限";
+
+/* The title of the Amplitude service */
+"Amplitude"  = "幅度";
+
+/* Warning to ensure the carb entry is accurate during an override */
+"An active override is modifying your carb ratio and insulin sensitivity. If you don't want this to affect your bolus calculation and projected glucose, consider turning off the override."  = "主动覆盖是改变你的碳水化合物比率和胰岛素敏感性。如果你不想影响你的大剂量计算和预测血糖，可以考虑关闭覆盖。";
+
+/* Alert message for a carb entry persistence error */
+"An error occurred while trying to save your carb entry."  = "试图保存您的碳水化合物输入时出错。";
+
+/* Alert message for a manual glucose entry persistence error */
+"An error occurred while trying to save your manual glucose entry."  = "试图保存手动葡萄糖输入时出错。";
+
+/* Invalid onboarding state */
+"An unexpected onboarding error state occurred."  = "出现意外的错误状态。";
+
+/* Alert message when glucose data returns while on bolus screen */
+"An updated bolus recommendation is available."  = "有更新的大剂量建议。";
+
+/* The title of the amplitude API key credential */
+"API Key"  = "API密钥";
+
+/* The title of the nightscout API secret credential */
+"API Secret"  = "API机密";
+
+/* Settings app profile section */
+"App Profile"  = "应用程序配置文件";
+
+/* Action sheet confirmation message for logged dose deletion */
+"Are you sure you want to delete all logged dose entries?"  = "您确定要删除所有记录的剂量条目吗？";
+
+/* No comment provided by engineer. */
+"Are you sure you want to delete all your %@ Data?\n(This action is not reversible)"  = "您确定要删除所有%@数据吗？\n（此操作不可逆）";
+
+/* The message displayed during a device authentication prompt to log an insulin dose */
+"Authenticate to log %@ Units"  = "对日志%@个单位进行身份验证";
+
+/* Caption for bolus screen notice when no bolus is recommended for the predicted glucose */
+"Based on your predicted glucose, no bolus is recommended."  = "根据您预测的血糖，不建议使用大剂量。";
+
+/* Message to the user to that the bluetooth is off */
+"Bluetooth\nOff"  = "蓝牙\n关闭";
+
+/* Message to the user that bluetooth is unavailable to the app */
+"Bluetooth\nUnavailable"  = "蓝牙\n不可用";
+
+/* Bluetooth off alert title */
+"Bluetooth Off Alert"  = "蓝牙关闭警报";
+
+/* Bluetooth unavailable alert title */
+"Bluetooth Unavailable Alert"  = "蓝牙不可用警报";
+
+/* The notification title for a bolus issue */
+"Bolus Issue"  = "大剂量问题";
+
+/* Alert title for an updated bolus recommendation */
+"Bolus Recommendation Updated"  = "更新了大剂量建议";
+
+/* Title for card displaying carb entry and bolus recommendation */
+"Bolus Summary"  = "大剂量摘要";
+
+/* Alert title for a bolus too small validation error */
+"Bolus Too Small"  = "大剂量太小";
+
+/*Label for carb entry row on bolus screen */
+"Carb Entry"  = "碳水录入";
+
+/* Details for configuration error when carb ratio schedule is missing */
+"Carb Ratio Schedule"  = "碳水系数一览表";
+
+/* The title of the view controller to create a new carb entry */
+"carb-entry-title-add"  = "录入碳水化合物条目";
+
+/* The title of the view controller to edit an existing carb entry */
+"carb-entry-title-edit"  = "编辑碳水化合物条目";
+
+/* Title for bolus screen warning when carbohydrate entry is too large */
+"Carbohydrate Entry Too Large"  = "碳水化合物进入量过大";
+
+/* Caption for bolus screen notice when glucose data is in the future */
+"Check your device time and/or remove any invalid data from Apple Health."  = "检查您的设备时间和/或从Apple Health中删除任何无效数据。";
+
+/* Alert title for closed loop off informational modal */
+"Closed Loop OFF"  = "闭环关闭";
+
+/* The description text for the looping enabled switch cell when closed loop is not allowed because the sensor is inactive */
+"Closed Loop requires an active CGM Sensor Session"  = "闭环需要活动的血糖传感器";
+
+/* The description text for the looping enabled switch cell when onboarding is not complete */
+"Closed Loop requires Setup to be Complete"  = "闭环需要完成安装";
+
+/* Title text for button to complete setup */
+"Complete Setup"  = "完成安装";
+
+/* Critical Alerts Status text */
+"Critical Alerts"  = "严重警报";
+
+/* Critical event log ready text */
+"Critical Event Log Ready"  = "关键事件日志就绪";
+
+/* Critical event log export title */
+"Critical Event Logs"  = "关键事件日志";
+
+/* Critical event log export error alert message */
+"Critical Event Logs were not able to be exported."  = "无法导出关键事件日志。";
+
+/* Label for glucose entry row on simple bolus screen */
+"Current Glucose"  = "当前葡萄糖";
+
+/* No comment provided by engineer. */
+"Delete Testing CGM Data"  = "删除测试血糖传感器数据";
+
+/* No comment provided by engineer. */
+"Delete Testing Data"  = "删除测试数据";
+
+/* No comment provided by engineer. */
+"Delete Testing Pump Data"  = "删除测试泵数据";
+
+/* Button text to deliver a bolus */
+"Deliver"  = "输注";
+
+/* Descriptive text for Therapy Settings */
+"Diabetes Treatment"  = "糖尿病治疗";
+
+/* Alert body when entered carbohydrates is greater than threshold (1: entered quantity in grams) */
+"Did you intend to enter %1$@ grams as the amount of carbohydrates for this meal?"  = "你打算输入%1$@克作为这顿饭的碳水化合物量吗？";
+
+/*The button label of the action used to dismiss an error alert */
+"Dismiss"  = "关闭";
+
+/* Title for card to log dose */
+"Dose Summary"  = "剂量汇总";
+
+/* The title of the Dosing Strategy section in settings */
+"Dosing Strategy"  = "给药策略";
+
+/* Message to the user to enable bluetooth */
+"Enable\nBluetooth"  = "开启\n蓝牙";
+
+/* Caption for bolus screen notice when glucose data is missing or stale */
+"Enter a blood glucose from a meter for a recommended bolus amount."  = "输入仪表中的血糖值作为推荐的推注量。";
+
+/* Button text to begin entering a bolus */
+"Enter Bolus"  = "输入大剂量";
+
+/* Button text prompting manual glucose entry on bolus screen */
+"Enter Fingerstick Glucose"  = "输入指血葡萄糖";
+
+/* The placeholder text instructing users to enter a glucose safety limit */
+"Enter glucose safety limit"  = "输入葡萄糖安全限值";
+
+/* Critical event log export error alert title */
+"Error Exporting Logs"  = "导出日志时出错";
+
+/* Remote command error description: bolus exceeds maximum bolus in settings. */
+"Exceeds maximum allowed bolus in settings"  = "超过设置中允许的最大剂量";
+
+/* Remote command error description: carbs exceed maximum amount. */
+"Exceeds maximum allowed carbs"  = "超过允许的最大碳水化合物";
+
+/* The title of the export critical event logs in support */
+"Export Critical Event Logs"  = "导出关键事件日志";
+
+/* The export file name formatted string (1: timestamp) */
+"Export-%1$@"  = "导出-%1$@";
+
+/* The alert title for a resume error */
+"Failed to Resume Insulin Delivery"  = "无法恢复胰岛素输送";
+
+/* Label for manual glucose entry row on bolus screen */
+"Fingerstick Glucose"  = "指血";
+
+/* Secondary text for alerts disabled warning, which appears on the main status screen. */
+"Fix now by turning Notifications, Critical Alerts and Time Sensitive Notifications ON."  = "现在通过打开\"通知\"、\"关键警报\"和\"时间敏感通知\"进行修复。";
+
+/* No comment provided by engineer. */
+"Forecasted blood glucose may still be higher than target range."  = "预测的血糖可能仍高于目标范围。";
+
+/* Title for forecast explanation modal on bolus view */
+"Forecasted Glucose"  = "预测葡萄糖";
+
+/* Get help with Alert Permissions support button text */
+"Get help with Alert Permissions"  = "获取有关警报权限的帮助";
+
+/* Alert title when glucose data returns while on bolus screen */
+"Glucose Data Now Available"  = "葡萄糖数据现在可用";
+
+/*Title for bolus screen warning when glucose entry is out of range */
+"Glucose Entry Out of Range"  = "葡萄糖输入超出范围";
+
+/* Details for configuration error when glucose target range schedule is missing */
+"Glucose Target Range Schedule"  = "葡萄糖目标范围一览表";
+
+/* The title text for how to update */
+"How to update (LoopDocs)"  = "如何更新（LoopDocs）";
+
+/* Immediate Delivery status text */
+"Immediate"  = "立即";
+
+/* Title of the alert when carb input maximum was exceeded. */
+"Input Maximum Exceeded"  = "超过输入最大值";
+
+/* Notification body for crash recovery alert */
+"Insulin adjustments have been disabled!"  = "胰岛素调节已被禁用！";
+
+/* Descriptive text for Insulin Pump */
+"Insulin Pump"  = "胰岛素泵";
+
+/* Details for configuration error when insulin sensitivity schedule is missing */
+"Insulin Sensitivity Schedule"  = "胰岛素敏感性一览表";
+
+/* The title of the cell indicating the pump is suspended */
+"Insulin Suspended"  = "胰岛泵已暂停";
+
+/* Insulin type label */
+"Insulin Type"  = "胰岛素类型";
+
+/* Remote command error description: invalid carb amount. */
+"Invalid carb amount"  = "无效的碳水化合物量";
+
+/* Title for bolus screen notice when glucose data is in the future */
+"Invalid Future Glucose"  = "无效的未来血糖值";
+
+/* The error message when glucose data is in the future. (1: glucose data time in future in minutes) */
+"Invalid glucose reading with a timestamp that is %1$@ in the future"  = "未来时间戳为%1$@的葡萄糖读数无效";
+
+/* Title of the warning shown when a large meal was entered */
+"Large Meal Entered"  = "已输入餐时";
+
+/* OK button title for alert shown when delivery status is uncertain */
+"Learn More"  = "了解更多信息";
+
+/* Estimated remaining duration with less than a minute */
+"Less than a minute remaining"  = "还剩不到一分钟";
+
+/*Title for dose logging screen */
+"Log Dose"  = "对数剂量";
+
+/* The title of the screen displaying a manually entered insulin dose */
+"Logged Insulin Dose"  = "记录的胰岛素剂量";
+
+/* Title for crash recovery alert */
+"Loop Crashed"  = "Loop崩溃";
+
+/* Bluetooth unavailable alert body. */
+"Loop has detected an issue with your Bluetooth settings, and will not work successfully until Bluetooth is enabled. You will not receive glucose readings, or be able to bolus."  = "Loop检测到您的蓝牙设置有问题，在启用蓝牙之前无法成功工作。您将无法接收到葡萄糖读数，也无法推注";
+
+/* Description string for automatic bolus dosing strategy */
+"Loop will automatically bolus when insulin needs are above scheduled basal, and will use temporary basal rates when needed to reduce insulin delivery below scheduled basal."  = "当胰岛素需求高于计划的基础剂量时，Loop将自动推注，并在需要时使用临时基础剂量，以将胰岛素输送减少到计划的基础量以下。";
+
+/* Bluetooth off background alert body. */
+"Loop will not work successfully until Bluetooth is enabled. You will not receive glucose readings, or be able to bolus."  = "在启用蓝牙之前，环路将无法成功工作。您将无法接收到葡萄糖读数，也无法推注。";
+
+/* Description string for temp basal only dosing strategy */
+"Loop will set temporary basal rates to increase and decrease insulin delivery."  = "Loop将设置临时的基础利率，以增加和减少胰岛素的输送。";
+
+/*Title for bolus screen warning when glucose is below suspend threshold, but a bolus is recommended */
+"Low Glucose"  = "低血糖";
+
+/* Manage Permissions in Settings button text */
+"Manage Permissions in Settings"  = "管理设置中的权限";
+
+/* Description of a bolus dose entry (1: value (? if no value) in bold, 2: unit) */
+"Manual Dose: <b>%1$@</b> %2$@"  = "手动剂量：<b>%1$@</b>%2$@";
+
+/* Details for configuration error when maximum basal rate per hour is missing */
+"Maximum Basal Rate Per Hour"  = "每小时最大基本费率";
+
+/* Title for bolus screen warning when max bolus is exceeded */
+"Maximum Bolus Exceeded"  = "超过最大剂量";
+
+/* Alert title when maximum duration exceeded. */
+"Maximum Duration Exceeded"  = "超过最长持续时间";
+
+/* Title for bolus entry screen when also entering carbs */
+"Meal Bolus"  = "餐时大剂量";
+
+/* Remote command error description: missing maximum bolus in settings. */
+"Missing maximum allowed bolus in settings"  = "设置中缺少允许的最大剂量";
+
+/* Label for toggle to mute all alerts */
+"Mute All Alerts"  = "将所有警报静音";
+
+/* The title of the Nightscout service */
+"Nightscout"  = "Nightscout";
+
+/* Description of temporary mute alerts */
+"No alerts will sound while muted. Once this period ends, your alerts and alarms will resume as normal."  = "静音时不会发出警报。此时间段结束后，您的警报和警报将恢复正常";
+
+/*Title for bolus screen warning when no bolus is recommended */
+"No Bolus Recommended"  = "不推荐使用大剂量";
+
+/* Alert title for a missing maximum bolus setting error */
+"No Maximum Bolus Configured"  = "未配置最大剂量";
+
+/* Alert title for a missing pump error */
+"No Pump Configured"  = "未配置泵";
+
+/* The title of the cell indicating that there is no recent glucose */
+"No Recent Glucose"  = "近期无血糖";
+
+/* Title for bolus screen notice when glucose data is missing or stale */
+"No Recent Glucose Data"  = "没有最近的血糖数据";
+
+/* Title for bolus screen notice when pump data is missing or stale */
+"No Recent Pump Data"  = "没有最近的泵数据";
+
+/* The title of the action used when rejecting the the amount of carbohydrates entered. */
+"No, edit amount"  = "否，编辑总量";
+
+/* Notification Delivery Status text */
+"Notification Delivery"  = "通知传递";
+
+/* Format for Critical Alerts permissions disabled alert body. (1: app name) */
+"Notification delivery is set to Scheduled Summary in your phone’s settings.\n\nTo avoid delay in receiving notifications from %1$@, we recommend notification delivery be set to Immediate Delivery."  = "在您的手机设置中，通知传递被设置为\"计划摘要\"。\n\n为了避免延迟接收来自%1$@的通知，我们建议将通知传递设置为\"立即传递\"";
+
+/* Notifications Status text */
+"Notifications"  = "通知";
+
+/* Scheduled Delivery Enabled alert title */
+"Notifications Delayed"  = "通知延迟";
+
+/* Alert Permissions descriptive text (1: app name) */
+"Notifications give you important %1$@ app information without requiring you to open the app."  = "通知会为您提供重要的%1$@应用程序信息，而无需您打开该应用程序。";
+
+/* Alert Permissions descriptive text (1: app name) */
+"Notifications give you important %1$@ app information without requiring you to open the app.\n\nKeep these turned ON in your phone’s settings to ensure you receive %1$@ Notifications, Critical Alerts, and Time Sensitive Notifications."  = "通知会为您提供重要的%1$@应用信息，而无需打开该应用。\n\n在手机设置中保持打开状态，以确保您收到%1$@通知、关键警报和时间敏感通知。";
+
+/* Notification Setting Status is Off */
+"Off"  = "关闭";
+
+/* Modal body for crash recovery alert */
+"Oh no! Loop crashed while dosing, and insulin adjustments have been paused until this dialog is closed. Dosing history may not be accurate. Please review Insulin Delivery charts, and monitor your blood glucose carefully."  = "哦，不！给药时循环崩溃，胰岛素调整已暂停，直到此对话框关闭。给药历史可能不准确。请查看胰岛素输送图表，并仔细监测血糖。";
+
+/*The title of the notification action to acknowledge a device alert */
+"OK"  = "好的";
+
+/* Notification Setting Status is On */
+"On"  = "打开";
+
+/* Notice when predicted glucose for bolus recommendation is in range */
+"Predicted glucose is in range."  = "预测的葡萄糖在范围内。";
+
+/* Notice message when recommending bolus when BG is below the glucose safety limit. (1: glucose value) */
+"Predicted glucose of %1$@ is below your glucose safety limit setting."  = "预测的%1$@葡萄糖低于您的葡萄糖安全限值设置。";
+
+/* Preparing critical event log text */
+"Preparing Critical Event Logs"  = "准备关键事件日志";
+
+/* Settings App Profile expiration view */
+"Profile Expiration"  = "配置文件过期";
+
+/* Time that profile expires */
+"Profile expires "  = "配置文件过期";
+
+/* The title for notification of upcoming profile expiration */
+"Profile Expires Soon"  = "配置文件即将过期";
+
+/* The error message displayed for pump manager errors. (1: pump manager error) */
+"Pump Manager Error: %1$@"  = "泵管理器错误：%1$@";
+
+/* The error message displayed for pumpSuspended errors. */
+"Pump Suspended. Automatic dosing is disabled."  = "泵已暂停。自动加药已禁用。";
+
+/*Label for recommended bolus row on simple bolus screen */
+"Recommended Bolus"  = "推荐的大剂量";
+
+/* Title for bolus screen warning when recommended bolus exceeds max bolus */
+"Recommended Bolus Exceeds Maximum Bolus"  = "推荐剂量超过最大剂量";
+
+/*The notification title for a remote failure. (1: Bolus amount) */
+"Remote Bolus Entry: %@ U"  = "远程大剂量输入：%@U";
+
+/* The carb amount message for a remote carbs entry notification. (1: Carb amount in grams) */
+"Remote Carbs Entry: %d grams"  = "远程碳水化合物输入：%d克";
+
+/* The notification title for the remote command expiration error */
+"Remote Command Expired"  = "远程命令已过期";
+
+/* Button text to save carbs and/or manual glucose entry and deliver a bolus */
+"Save and Deliver"  = "保存并输注大剂量";
+
+/* Button text to save carbs and/or manual glucose entry without a bolus */
+"Save without Bolusing"  = "保存并不进行大剂量";
+
+/* Scheduled Delivery status text */
+"Scheduled"  = "已安排";
+
+/* List header for mute all alerts period */
+"Select Mute Period"  = "选择静音时段";
+
+/* The title of the cell indicating that onboarding is suspended */
+"Setup Incomplete"  = "安装程序未完成";
+
+/* Title of simple bolus view when not displaying meal entry */
+"Simple Bolus Calculator"  = "简单大剂量计算器";
+
+/* Title of simple bolus view when displaying meal entry */
+"Simple Meal Calculator"  = "简单膳食计算器";
+
+/* Software update button link text */
+"Software Update"  = "软件更新";
+
+/* Descriptive text for button to add CGM device */
+"Tap here to set up a CGM"  = "点击此处设置血糖传感器";
+
+/* Descriptive text for button to add pump device */
+"Tap here to set up a pump"  = "点击此处设置泵";
+
+/* The descriptive text of the add service button in settings */
+"Tap here to set up a Service"  = "点击此处设置服务";
+
+/* The subtitle of the cell displaying an action to add a manually measurement glucose value */
+"Tap to Add"  = "点击添加";
+
+/* Message presented in the status row instructing the user to tap this row to stop a bolus */
+"Tap to Stop"  = "点击停止";
+
+/* The title of the cell indicating alerts are temporarily muted */
+"Temp Mute Alerts"  = "临时静音警报";
+
+/* Alert message for a bolus too small validation error */
+"The bolus amount entered is smaller than the minimum deliverable."  = "输入的推注量小于最低可交付量。";
+
+/* Forecast explanation modal on bolus view */
+"The bolus dosing algorithm uses a more conservative estimate of forecasted blood glucose than what is used to adjust your basal rate.\n\nAs a result, your forecasted blood glucose after a bolus may still be higher than your target range."  = "推注给药算法对预测血糖的估计比用于调整基础心率的估计更保守。\n\n因此，推注后的预测血糖可能仍高于目标范围";
+
+/* Alert message for an updated bolus recommendation */
+"The bolus recommendation has updated. Please reconfirm the bolus amount."  = "推注建议已更新。请重新确认推注量。";
+
+/* Alert body displayed for quantity greater than max (1: maximum quantity in grams) */
+"The maximum allowed amount is %@ grams."  = "允许的最大数量为%@克。";
+
+/* Warning for simple bolus when carbohydrate entry is too large. (1: maximum carbohydrate entry) */
+"The maximum amount allowed is %1$@."  = "允许的最大金额为%1$@。";
+
+/* Alert message for a maximum bolus validation error (1: max bolus value) */
+"The maximum bolus amount is %@ U."  = "最大剂量为%@U。";
+
+/* Alert message for a missing maximum bolus setting error */
+"The maximum bolus setting must be configured before a bolus can be delivered."  = "必须先配置最大推注设置，然后才能输送推注。";
+
+/* The notification body for a remote command expiration. (1: Expiration in minutes) */
+"The remote command expired %.0f minutes ago."  = "远程命令在%.0f分钟前过期。";
+
+/* Time Sensitive Status text */
+"Time Sensitive Notifications"  = "时间敏感通知";
+
+/* Critical event log export error alert try again button */
+"Try Again"  = "再试一次";
+
+/* Bluetooth off foreground alert body */
+"Turn on Bluetooth to receive alerts, alarms or sensor glucose readings."  = "打开蓝牙以接收警报、警报或传感器葡萄糖读数。";
+
+/* Title for alert shown when alert acknowledgement fails */
+"Unable To Clear Alert"  = "无法清除警报";
+
+/* Title for alert shown when delivery status is uncertain */
+"Unable To Reach Pump"  = "无法与泵通信";
+
+/* Alert title for a carb entry persistence error */
+"Unable to Save Carb Entry"  = "无法保存碳水条目";
+
+/* Alert title for a manual glucose entry persistence error */
+"Unable to Save Manual Glucose Entry"  = "无法保存手动葡萄糖输入";
+
+/* The alert body for an error while canceling a bolus */
+"Unable to stop the bolus in progress. Move your iPhone closer to the pump and try again. Check your insulin delivery history for details, and monitor your glucose closely."  = "无法停止正在进行的推注。将iPhone移到离泵更近的位置，然后重试。查看胰岛素输送历史记录以了解详细信息，并密切监测血糖。";
+
+/* The error message displayed for unknown errors. (1: unknown error) */
+"Unknown Error: %1$@"  = "未知错误：%1$@";
+
+/* Unknown amount of time in settings' profile expiration section */
+"Unknown time"  = "未知时间";
+
+/* The title of a target alert action specifying pre-meal targets duration for 1 hour or until the user enters carbs (whichever comes first). */
+"Until I enter carbs"  = "直到手动输入碳水化合物";
+
+/* The title of a target alert action specifying workout targets duration until it is turned off by the user */
+"Until I turn off"  = "直到手动关掉";
+
+/* The title of the alert controller used to select a duration for pre-meal targets */
+"Use Pre-Meal Preset"  = "使用餐前预设";
+
+/* The title of the alert controller used to select a duration for workout targets */
+"Use Workout Preset"  = "使用锻炼预设";
+
+/* Alert Permissions Need Attention alert title */
+"Warning! Safety notifications are turned OFF"  = "警告！安全通知已关闭";
+
+/* Explanation of glucose safety limit */
+"When current or forecasted glucose is below the glucose safety limit, Loop will not recommend a bolus, and will always recommend a temporary basal rate of 0 units per hour."  = "当当前或预测的葡萄糖低于葡萄糖安全限值时，Loop不会建议推注，而是始终建议每小时0单位的临时基础速率。";
+
+/* No comment provided by engineer. */
+"When out of Closed Loop mode, the app uses a simplified bolus calculator like a typical pump."  = "当不处于闭环模式时，该应用程序会像典型的泵一样使用简化的推注计算器。";
+
+/* Workout override still on reminder alert body. */
+"Workout Temp Adjust has been turned on for more than 24 hours. Make sure you still want it enabled, or turn it off in the app."  = "训练温度调节已打开超过24小时。请确保您仍希望启用它，或在应用程序中关闭它。";
+
+/* Workout override still on reminder alert title */
+"Workout Temp Adjust Still On"  = "训练温度调节仍然打开";
+
+/* The title of the action used when confirming entered amount of carbohydrates. */
+"Yes"  = "是";
+
+/* Format for Notifications permissions disabled alert body. (1: app name) */
+"You may not get sound, visual or vibration alerts regarding critical safety information.\n\nTo fix the issue, tap ‘Settings’ and make sure Notifications, Critical Alerts and Time Sensitive Notifications are turned ON."  = "您可能无法获得有关关键安全信息的声音、视觉或振动警报。\n\n要解决此问题，请点击\"设置\"并确保\"通知\"、\"关键警报\"和\"时间敏感通知\"已打开";
+
+/* Time change alert body. (1: app name) */
+"Your %1$@’s time has been changed. %2$@ needs accurate time records to make predictions about your glucose and adjust your insulin accordingly.\n\nCheck in your %1$@ Settings (General / Date & Time) and verify that 'Set Automatically' is turned ON. Failure to resolve could lead to serious under-delivery or over-delivery of insulin."  = "您%1$@的时间已更改。%2$@需要准确的时间记录来预测您的血糖并相应地调整您的胰岛素。\n\n请检查您的%1$@设置（常规/日期和时间），并验证\"自动设置\"是否已打开。如果无法解决，可能会导致严重的胰岛素供应不足或过量。";
+
+/* Format string for simple bolus screen warning when glucose is below glucose warning limit. */
+"Your glucose is below %1$@. Are you sure you want to bolus?"  = "你的血糖低于%1$@。你确定要给药吗？";
+
+/* Caption for bolus screen notice when no bolus is recommended due to prediction dropping below glucose safety limit */
+"Your glucose is below or predicted to go below your glucose safety limit, %@."  = "您的血糖低于或预计将低于您的血糖安全限值，%@。";
+
+/* Format string for bolus screen warning when no bolus is recommended due input value below glucose safety limit. (1: suspendThreshold) */
+"Your glucose is below your glucose safety limit, %1$@."  = "您的血糖低于您的血糖安全限值，%1$@。";
+
+/* Format string for meal bolus screen warning when no bolus is recommended due to glucose input value below recommendation threshold */
+"Your glucose is low. Eat carbs and consider waiting to bolus until your glucose is in a safe range."  = "你的血糖很低。吃碳水化合物，并考虑等血糖达到安全范围后再服用。";
+
+/* Bolus screen warning when no bolus is recommended due to glucose input value below recommendation threshold for meal bolus */
+"Your glucose is low. Eat carbs and monitor closely."  = "你的血糖很低。请立即吃碳水化合物并密切监测。";
+
+/* Warning for simple bolus when max bolus is exceeded. (1: maximum bolus) */
+"Your maximum bolus amount is %1$@."  = "您的最大剂量为%1$@。";
+
+/* Caption for bolus screen notice when pump data is missing or stale */
+"Your pump data is stale. %1$@ cannot recommend a bolus amount."  = "您的泵数据已过时。%1$@无法推荐剂量。";
+
+/* The description text for the looping enabled switch cell when closed loop is not allowed because the pump is delivering a manual temp basal. */
+"Your pump is delivering a manual temporary basal rate."  = "您的泵正在提供手动临时基本速率。";
+
+/* Warning for simple bolus when recommended bolus exceeds max bolus. (1: maximum bolus) */
+"Your recommended bolus exceeds your maximum bolus amount of %1$@."  = "您推荐的推注量超过了您的最大推注量%1$@。";

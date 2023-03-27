@@ -63,16 +63,6 @@ public extension COBChart {
         // Grid lines
         let gridLayer = ChartGuideLinesForValuesLayer(xAxis: xAxisLayer.axis, yAxis: yAxisLayer.axis, settings: guideLinesLayerSettings, axisValuesX: Array(xAxisValues.dropFirst().dropLast()), axisValuesY: yAxisValues)
 
-        // read from Settings->Loop, restart required
-        let addNowMarker = UserDefaults.standard.bool(forKey: "addNowMarkerToCharts")
-
-        var currentTimeSettings = ChartGuideLinesLayerSettings(linesColor: UIColor.carbTintColor, linesWidth: 0.0)
-        let currentTimeValue = ChartAxisValueDate(date: Date(),  formatter: { _ in "" })
-        if addNowMarker {
-            currentTimeSettings = ChartGuideLinesLayerSettings(linesColor: UIColor.carbTintColor, linesWidth: 1.0)
-        }
-        let currentTimeLayer = ChartGuideLinesForValuesLayer(xAxis: xAxisLayer.axis, yAxis: yAxisLayer.axis, settings: currentTimeSettings, axisValuesX: [currentTimeValue], axisValuesY: [])
-
         if gestureRecognizer != nil {
             cobChartCache = ChartPointsTouchHighlightLayerViewCache(
                 xAxisLayer: xAxisLayer,
@@ -86,7 +76,6 @@ public extension COBChart {
 
         let layers: [ChartLayer?] = [
             gridLayer,
-            currentTimeLayer,
             xAxisLayer,
             yAxisLayer,
             cobChartCache?.highlightLayer,

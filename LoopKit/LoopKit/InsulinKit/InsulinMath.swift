@@ -40,23 +40,10 @@ extension DoseEntry {
         }
 
         // Consider doses within the delta time window as momentary
-        //ken changes
-        //implement user set negative basal multiplier
-        var negativeBasalMultiplier = UserDefaults.standard.double(forKey: "negativeBasalMultiplier")
-        // if user has not modified settings, this value reports as 0 initially
-        // Default shows as 100%, aka, same as unmodified code
-        if negativeBasalMultiplier == 0 {
-            negativeBasalMultiplier = 1
-        }
-        var modifiednetBasalUnits = netBasalUnits
-        if netBasalUnits < 0.0 {
-            modifiednetBasalUnits = netBasalUnits * negativeBasalMultiplier
-        }
-        //this used netBasalUnits as multiplier originally
         if endDate.timeIntervalSince(startDate) <= 1.05 * delta {
-            return modifiednetBasalUnits * model.percentEffectRemaining(at: time)
+            return netBasalUnits * model.percentEffectRemaining(at: time)
         } else {
-            return modifiednetBasalUnits * continuousDeliveryInsulinOnBoard(at: date, model: model, delta: delta)
+            return netBasalUnits * continuousDeliveryInsulinOnBoard(at: date, model: model, delta: delta)
         }
     }
 
@@ -90,23 +77,11 @@ extension DoseEntry {
         }
 
         // Consider doses within the delta time window as momentary
-        //ken changes
-            //if net basal is negative use a mulitplier (0-1)
-            //modified in user settings
-            var negativeBasalMultiplier = UserDefaults.standard.double(forKey: "negativeBasalMultiplier")
-            if negativeBasalMultiplier == 0 {
-                negativeBasalMultiplier = 1
-            }
-            var modifiednetBasalUnits = netBasalUnits
-            if netBasalUnits < 0.0 {
-                modifiednetBasalUnits = netBasalUnits * negativeBasalMultiplier
-            }
-            //originally used netBasalUnits
-            if endDate.timeIntervalSince(startDate) <= 1.05 * delta {
-                return modifiednetBasalUnits * -insulinSensitivity * (1.0 - model.percentEffectRemaining(at: time))
-            } else {
-                return modifiednetBasalUnits * -insulinSensitivity * continuousDeliveryGlucoseEffect(at: date, model: model, delta: delta)
-            }
+        if endDate.timeIntervalSince(startDate) <= 1.05 * delta {
+            return netBasalUnits * -insulinSensitivity * (1.0 - model.percentEffectRemaining(at: time))
+        } else {
+            return netBasalUnits * -insulinSensitivity * continuousDeliveryGlucoseEffect(at: date, model: model, delta: delta)
+        }
     }
 
     func trimmed(from start: Date? = nil, to end: Date? = nil, syncIdentifier: String? = nil) -> DoseEntry {
@@ -325,6 +300,7 @@ extension DoseEntry {
             syncIdentifier: syncIdentifier,
             scheduledBasalRate: scheduledBasalRate,
             insulinType: insulinType,
+            automatic: automatic,
             isMutable: isMutable,
             wasProgrammedByPumpUI: wasProgrammedByPumpUI
         )
@@ -377,7 +353,7 @@ extension DoseEntry {
                 return self
             }
         }
-        return DoseEntry(type: type, startDate: startDate, endDate: endDate, value: value, unit: unit, deliveredUnits: resolvedUnits, description: description, syncIdentifier: syncIdentifier, scheduledBasalRate: scheduledBasalRate, insulinType: insulinType, isMutable: isMutable, wasProgrammedByPumpUI: wasProgrammedByPumpUI)
+        return DoseEntry(type: type, startDate: startDate, endDate: endDate, value: value, unit: unit, deliveredUnits: resolvedUnits, description: description, syncIdentifier: syncIdentifier, scheduledBasalRate: scheduledBasalRate, insulinType: insulinType, automatic: automatic, isMutable: isMutable, wasProgrammedByPumpUI: wasProgrammedByPumpUI)
     }
 }
 
@@ -418,6 +394,7 @@ extension Collection where Element == DoseEntry {
                         description: suspend.description ?? dose.description,
                         syncIdentifier: suspend.syncIdentifier,
                         insulinType: suspend.insulinType,
+                        automatic: suspend.automatic,
                         isMutable: suspend.isMutable,
                         wasProgrammedByPumpUI: suspend.wasProgrammedByPumpUI
                     ))
@@ -437,6 +414,7 @@ extension Collection where Element == DoseEntry {
                         description: suspend.description ?? dose.description,
                         syncIdentifier: suspend.syncIdentifier,
                         insulinType: suspend.insulinType,
+                        automatic: suspend.automatic,
                         isMutable: suspend.isMutable,
                         wasProgrammedByPumpUI: suspend.wasProgrammedByPumpUI
                     ))
@@ -477,6 +455,7 @@ extension Collection where Element == DoseEntry {
                         description: last.description,
                         syncIdentifier: last.syncIdentifier,
                         insulinType: last.insulinType,
+                        automatic: last.automatic,
                         isMutable: last.isMutable,
                         wasProgrammedByPumpUI: last.wasProgrammedByPumpUI
                     ))
@@ -621,7 +600,7 @@ extension Collection where Element == DoseEntry {
         if insertingBasalEntries {
             // Create a placeholder entry at our start date, so we know the correct duration of the
             // inserted basal entries
-            lastBasal = DoseEntry(resumeDate: start)
+            lastBasal = DoseEntry(resumeDate: start, automatic: true)
         }
 
         for dose in self {

@@ -1,0 +1,36 @@
+/* Description in UsageDataPrivacyPreferenceView for shareInstallationStatsOnly */
+"Anonymously share minimal data about this Loop version, to help developers know how many people are using Loop. Which device, and operating system version will also be shared." = "匿名分享关于这个Loop版本的最少量数据，以帮助开发人员了解有多少人在使用Loop。哪种设备和操作系统版本也将被分享。";
+
+/* Button title for choosing onboarding without nightscout */
+"Continue" = "继续";
+
+/* Description in UsageDataPrivacyPreferenceView for no sharing */
+"Do not share any data." = "不分享任何数据.";
+
+/* Description in UsageDataPrivacyPreferenceView for shareUsageDetailsWithDevelopers */
+"In addition to version information, anonymously share data about how Loop is being used on your phone. Usage data includes events like opening loop, bolusing, adding carbs, and navigating between screens. It does not include health data like glucose values or dosing amounts." = "除了版本信息外，还可匿名分享有关Loop在您手机上的使用情况的数据。使用数据包括打开Loop、注射、添加碳水化合物和在屏幕间浏览等事件。它不包括健康数据，如葡萄糖值或剂量。";
+
+/* Title for LoopKit Analytics */
+"LoopKit Analytics" = "LoopKit 使用分析";
+
+/* Title in UsageDataPrivacyPreferenceView for no sharing */
+"No Sharing" = "不共享";
+
+/* Title on UsageDataPrivacyPreferenceView */
+"Share Data" = "数据共享";
+
+/* Title in UsageDataPrivacyPreferenceView for shareUsageDetailsWithDevelopers */
+"Share Usage Data" = "共享使用数据";
+
+/* Title in UsageDataPrivacyPreferenceView for shareInstallationStatsOnly */
+"Share Version Only" = "只共享版本号";
+
+/* Navigation link title for Submit Bug Report */
+"Submit Bug Report" = "提交Bug数据";
+
+/* Navigation Link Title for Usage Data Sharing */
+"Usage Data Sharing" = "使用数据共享";
+
+/* Main summary text for UsageDataPrivacyPreferenceView */
+"You can optionally choose to share usage data with Loop developers to improve Loop. Sharing is not required, and Loop will function fully no matter which option you choose. Usage data will not be shared with third parties." = "您可以选择与Loop开发人员分享使用数据，以改进Loop。共享不是必须的，无论您选择哪种选项，Loop都将全面运作。使用数据将不会与第三方共享。";
+

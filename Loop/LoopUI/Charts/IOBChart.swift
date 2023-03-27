@@ -9,9 +9,13 @@ import Foundation
 import LoopKit
 import LoopKitUI
 import SwiftCharts
+import HealthKit
 
 
 public class IOBChart: ChartProviding {
+
+    static let chartUnit = HKUnit.internationalUnit()
+
     public init() {
     }
 
@@ -62,16 +66,6 @@ public extension IOBChart {
         // Grid lines
         let gridLayer = ChartGuideLinesForValuesLayer(xAxis: xAxisLayer.axis, yAxis: yAxisLayer.axis, settings: guideLinesLayerSettings, axisValuesX: Array(xAxisValues.dropFirst().dropLast()), axisValuesY: yAxisValues)
 
-        // read from Settings->Loop, restart required
-        let addNowMarker = UserDefaults.standard.bool(forKey: "addNowMarkerToCharts")
-
-        let currentTimeValue = ChartAxisValueDate(date: Date(), formatter: { _ in "" })
-        var currentTimeSettings = ChartGuideLinesLayerSettings(linesColor: colors.insulinTint, linesWidth: 0.0)
-        if addNowMarker {
-            currentTimeSettings = ChartGuideLinesLayerSettings(linesColor: colors.insulinTint, linesWidth: 1.0)
-        }
-        let currentTimeLayer = ChartGuideLinesForValuesLayer(xAxis: xAxisLayer.axis, yAxis: yAxisLayer.axis, settings: currentTimeSettings, axisValuesX: [currentTimeValue], axisValuesY: [])
-
         // 0-line
         let dummyZeroChartPoint = ChartPoint(x: ChartAxisValueDouble(0), y: ChartAxisValueDouble(0))
         let zeroGuidelineLayer = ChartPointsViewsLayer(xAxis: xAxisLayer.axis, yAxis: yAxisLayer.axis, chartPoints: [dummyZeroChartPoint], viewGenerator: {(chartPointModel, layer, chart) -> UIView? in
@@ -96,7 +90,6 @@ public extension IOBChart {
 
         let layers: [ChartLayer?] = [
             gridLayer,
-            currentTimeLayer,
             xAxisLayer,
             yAxisLayer,
             zeroGuidelineLayer,
@@ -117,7 +110,7 @@ public extension IOBChart {
         iobPoints = iobValues.map {
             return ChartPoint(
                 x: ChartAxisValueDate(date: $0.startDate, formatter: dateFormatter),
-                y: ChartAxisValueDoubleUnit($0.value, unitString: "U", formatter: doseFormatter)
+                y: ChartAxisValueDoubleUnit($0.value, unitString: Self.chartUnit.localizedShortUnitString, formatter: doseFormatter)
             )
         }
     }

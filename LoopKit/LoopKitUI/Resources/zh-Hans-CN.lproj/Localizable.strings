@@ -1,0 +1,678 @@
+/* The format for an insulin needs percentage. */
+"%@%% of normal insulin" = "%@%% 胰岛素";
+
+/* Accessibility format string for (1: localized volume)(2: time) */
+"%1$@ units remaining at %2$@" = "%1$@ 单位剩余在 %2$@";
+
+/* Title of the carb entry absorption time cell */
+"Absorption Time" = "吸收时间";
+
+/* The title for the override emoji activity section */
+"Activity" = "活动";
+
+/* The title of the button to add the credentials for a service */
+"Add Account" = "添加账户";
+
+/* The title of the view controller to create a new carb entry */
+"Add Carb Entry" = "添加碳水";
+
+/* Action sheet confirmation message for pump history deletion */
+"Are you sure you want to delete all history entries?" = "确定要删除所有输入的历史数据吗？";
+
+/* Action sheet confirmation message for reservoir deletion */
+"Are you sure you want to delete all reservoir values?" = "确定要删除所有的储药器数据吗？";
+
+/* Describes a percentage decrease in overall insulin needs */
+"Basal, bolus, and correction insulin dose amounts are decreased by %@%%." = "基础率,大剂量及追加剂量将以%@%%减少";
+
+/* Describes a percentage increase in overall insulin needs */
+"Basal, bolus, and correction insulin dose amounts are increased by %@%%." = "基础率,大剂量及追加剂量将以%@%%增加";
+
+/* Describes a lack of change in overall insulin needs */
+"Basal, bolus, and correction insulin dose amounts are unaffected." = "基础率,大剂量及追加剂量将不受该设置影响";
+
+/* The title of the cancel action in an action sheet */
+"Cancel" = "取消";
+
+/* The text for the override cancellation button */
+"Cancel Override" = "取消覆盖";
+
+/* Title text for suspend resume button when temp basal canceling */
+"Canceling Temp Basal" = "取消临时基础率";
+
+/* Footer text for customizing an override from a preset (1: preset name) */
+"Changes will only apply this time you enable the override. The default settings of %@ will not be affected." = "将仅会在启用时覆盖该设置,默认设置%@ 不受影响";
+
+/* Carb entry section footer text explaining absorption time */
+"Choose a longer absorption time for larger meals, or those containing fats and proteins. This is only guidance to the algorithm and need not be exact." = "如果吃大餐或者是以脂肪和蛋白为主的食物，请选择比较长的吸收时间。该设置仅为算法的一般原则，具体请根据自身情况调整";
+
+/* The format string describing the date of a COB value. The first format argument is the localized date. */
+"com.loudnate.CarbKit.COBDateLabel" = "在 %1$@";
+
+/* The format string describing the starting date of a total value. The first format argument is the localized date. */
+"com.loudnate.CarbKit.totalDateLabel" = "自从 %1$@";
+
+/* The format string describing the date of an IOB value. The first format argument is the localized date. */
+"com.loudnate.InsulinKit.IOBDateLabel" = "在 %1$@";
+
+/* The format string describing the starting date of a total value. The first format argument is the localized date. */
+"com.loudnate.InsulinKit.totalDateLabel" = "自从 %1$@";
+
+/* The title for the override emoji condition section */
+"Condition" = "条件";
+
+/* Title of the setup button to continue */
+"Continue" = "继续";
+
+/* The section footer of correction range schedule */
+"Correction range is the blood glucose range that you would like Loop to correct to." = "校正范围指Loop系统会主动调整胰岛素输注并将血糖保持在该范围内";
+
+/* The text for a custom override */
+"Custom" = "自定义";
+
+/* The title for the custom override entry screen */
+"Custom Override" = "自定义覆盖";
+
+/* Title of the carb entry date picker cell */
+"Date" = "日期";
+
+/* The title of the button to remove the credentials for a service */
+"Delete Account" = "删除账户";
+
+/* Button title to delete all objects */
+"Delete All" = "删除所有";
+
+/* The text for the override duration setting */
+"Duration" = "持续时间";
+
+/* The title of the view controller to edit an existing carb entry */
+"Edit Carb Entry" = "编辑碳水";
+
+/* The title for the override editing screen */
+"Edit Override" = "编辑新设置";
+
+/* Footer text for editing an active override (1: preset name) */
+"Editing affects only the active override. The default settings of %@ will not be affected." = "编辑仅会影响正在使用的“覆盖”设置,默认设置%@不受影响";
+
+/* The text for the indefinite override duration setting */
+"Enable Indefinitely" = "一直使用";
+
+/* The detail text describing an enabled setting */
+"Enabled" = "已启用";
+
+/* The placeholder text instructing users how to enter a maximum bolus */
+"Enter a number of units" = "输入单位量";
+
+/* The placeholder text instructing users how to enter a maximum basal rate */
+"Enter a rate in units per hour" = "输入每小时基础率";
+
+/* Section title for fast absorbing food */
+"Fast" = "快速";
+
+/* The description shown on the insulin sensitivity schedule interface. */
+"Insulin sensitivity describes how your blood glucose should respond to a 1 Unit dose of insulin. Smaller values mean more insulin will be given when above target. Values that are too small can cause dangerously low blood glucose." = "胰岛素敏感系数指每单位胰岛素可以造成的血糖变化.比较小的值意味着当血糖高于目标时需要更多的胰岛素,如果该值设置太小可能会造成严重低血糖,请谨慎设置该参数";
+
+/* Placeholder for maximum value in glucose range */
+"max" = "最大";
+
+/* The title text for the maximum basal rate value */
+"Maximum Basal Rate" = "最大基础率限制";
+
+/* The title text for the maximum bolus value */
+"Maximum Bolus" = "最大大剂量限制";
+
+/* Section title for medium absorbing food */
+"Medium" = "中等";
+
+/* Placeholder for minimum value in glucose range */
+"min" = "分钟";
+
+/* Alert action title to open error help */
+"More Info" = "更多信息";
+
+/* The text for the override preset name setting */
+"Name" = "名称";
+
+/* The title for the new override preset entry screen */
+"New Preset" = "新配置";
+
+/* Section title for no-carb food
+   The title for override emoji miscellaneous section */
+"Other" = "其他";
+
+/* The title text for the insulin sensitivity scaling setting */
+"Overall Insulin Needs" = "全部胰岛素需要";
+
+/* The title text for the override presets screen */
+"Override Presets" = "覆盖预设值";
+
+/* Text directing the user to configure override presets */
+"Override presets can be set up under the 'Configuration' section of the settings screen." = "覆盖预设置可以通过”设置”的”配置”来完成";
+
+/* The section title of glucose overrides */
+"Overrides" = "覆盖";
+
+/* Title for the pre-meal override range */
+"Pre-Meal" = "餐前模式";
+
+/* The section header text override presets */
+"PRESETS" = "预设";
+
+/* The title of the screen displaying a pump event */
+"Pump Event" = "胰岛素泵事件";
+
+/* The default placeholder string for a credential */
+"Required" = "需要";
+
+/* Title text for button to resume insulin delivery */
+"Resume Delivery" = "恢复输注";
+
+/* Title text for button when insulin delivery is in the process of being resumed */
+"Resuming" = "恢复中";
+
+/* The text for the override preset name field placeholder */
+"Running" = "运行中";
+
+/* Button text for saving glucose correction range schedule
+   Button text for saving insulin sensitivity schedule */
+"Save" = "保存";
+
+/* The section header text for a scheduled override */
+"SCHEDULED OVERRIDE" = "计划覆盖";
+
+/* Section title for slow absorbing food */
+"Slow" = "慢";
+
+/* The text for the override start time */
+"Start Time" = "启动时间";
+
+/* Title text for suspend resume button when temp basal starting */
+"Starting Temp Basal" = "启动临时寄出";
+
+/* Title text for button to suspend insulin delivery */
+"Suspend Delivery" = "暂停输注";
+
+/* Title text for button when insulin delivery is in the process of being stopped */
+"Suspending" = "正在暂停";
+
+/* The text for the override preset symbol setting */
+"Symbol" = "符号";
+
+/* The empty-state text for a configuration value */
+"Tap to set" = "点击设置";
+
+/* The text for the override target range setting */
+"Target Range" = "目标范围";
+
+/* The title for the override selection screen */
+"Temporary Override" = "临时覆盖";
+
+/* Alert body displayed absorption time greater than max (1: maximum absorption time) */
+"The maximum absorption time is %@" = "最大吸收时间为  %@";
+
+/* Alert body displayed for quantity greater than max (1: maximum quantity in grams) */
+"The maximum allowed amount is %@ grams" = "允许的最大量为 %@ g";
+
+/* The schedule table view header describing the configured time zone difference from the default time zone. The substitution parameters are: (1: time zone name)(2: +/-)(3: time interval) */
+"Times in %1$@%2$@%3$@" = "时间 %1$@%2$@%3$@";
+
+/* The unit string for units per hour */
+"U/hour" = "单位/小时";
+
+/* The unit string for units */
+"Units" = "单位";
+
+/* Accessibility value for an unknown value
+   The default title to use when an entry has none */
+"Unknown" = "未知";
+
+/* Label indicating validation is occurring */
+"Verifying" = "验证";
+
+/* Title of an alert containing a validation warning */
+"Warning" = "警告";
+
+/* Title for the workout override range */
+"Workout" = "锻炼/运动模式";
+
+/* Information about workout range relative to correction range */
+" higher " = "更高";
+
+/* Information about pre-meal range relative to correction range */
+" lower " = "更低";
+
+/* 下限锻炼信息文本格式（1：应用名称） */
+"%1$@ or your Glucose Safety Limit, whichever is higher" = "%1$@ 或您的葡萄糖安全限制，以两者中较高者为准";
+
+/* 餐前覆盖预设标题 */
+"🍽 Pre-Meal" = "🍽 餐前" ;
+
+/* 锻炼覆盖预设标题 */
+"🏃‍♂️ Workout" = "🏃‍♂️ 锻炼" ;
+
+/* 工程师未提供注释。*/
+"A card whose text will wrap onto multiple lines if I continue to type for long enough—this length should do" = "一张卡片，如果我继续打字足够长的时间，文本将自动换行-这个长度应该足够。" ;
+
+/* 目标范围和纠正范围之间差异的信息 */
+"A Correction Range is different. This will be a narrower range." = "纠正范围不同。这将是一个较窄的范围。" ;
+
+/* 工程师未提供注释。*/
+"A simple card" = "一个简单的卡片" ;
+
+/* 基础速率为0 U/hr的警告文本 */
+"A value of 0 U/hr means you will be scheduled to receive no basal insulin." = "0 U/hr的值意味着您将不会安排接受任何基础胰岛素。" ;
+
+/* 无注释 */
+"Above dynamic data" = "上面的动态数据";
+
+/* 无注释 */
+"Above the save button" = "保存按钮上面";
+
+/* 无注释 */
+"Action Button" = "操作按钮";
+
+/* override历史时长的文本 */
+"Active Duration" = "激活时长";
+
+/* 添加新的计划条目的确认按钮文本 */
+"Add" = "添加";
+
+/* 疗法设置的身份验证提示字符串 */
+"Authenticate to save therapy setting" = "身份验证以保存疗法设置";
+
+/* 返回导航按钮标题 */
+"Back" = "返回";
+
+/* 多值基础速率警告的标题文本 */
+"Basal Rates" = "基础速率";
+
+/* 无注释 */
+"Below dynamic data" = "下面的动态数据";
+
+/* 无注释 */
+"Bottom" = "底部";
+
+/* 多值碳水化合物比例警告的标题文本 */
+"Carb Ratios" = "碳水化合物系数";
+
+/* Footer text for customizing from a preset (1: preset name) */
+"Changes will only apply this time you enable the preset. The default settings of %@ will not be affected." = "更改只会在启用预设时应用。%@的默认设置不会受到影响。";
+
+/* Text to close informational page */
+"Close" = "关闭";
+
+/* The title of the action used to dismiss an error alert */
+"com.loudnate.LoopKit.errorAlertActionTitle" = "com.loudnate.LoopKit.errorAlertActionTitle";
+
+/* Accessibility label for ProgressIndicatorView when showIndeterminantProgress */
+"Completed." = "已完成。";
+
+/* The button text for confirming the setting */
+"Confirm Setting" = "确认设置";
+
+/* No comment provided by engineer. */
+"content" = "内容";
+
+/* Title text for multi-value correction value warning */
+"Correction Values" = "校正数值";
+
+/* The title for the custom preset selection screen */
+"Custom Preset" = "自定义预设";
+
+/* The title of the button to remove the credentials for a service */
+"Delete" = "删除";
+
+/* Title text for crossed thresholds guardrail warning */
+"Delivery Limits" = "输送限制";
+
+/* Information about delivery limits */
+"Delivery Limits are safety guardrails for your insulin delivery." = "输送限制是您胰岛素输送的安全保障。";
+
+/* The text for the custom preset disable button */
+"Disable Preset" = "禁用预设";
+
+/* Video player done button label */
+"Done" = "完成";
+
+/* No comment provided by engineer. */
+"Dynamic component #%@" = "动态组件＃%@";
+
+/* No comment provided by engineer. */
+"Dynamic data %@" = "动态数据%@";
+
+/* The title for the enabled custom preset editing screen */
+"Edit" = "编辑";
+
+/* Footer text for editing an enabled custom preset (1: preset name) */
+"Edits persist only until the preset is disabled. The default settings of %@ will not be affected." = "编辑仅在启用预设时有效。%@的默认设置不会受到影响。";
+
+/* The button text for enabling a temporary override */
+"Enable" = "启用";
+
+/* The text for the override start time */
+"End Time" = "结束时间";
+
+/* Format string for accessibility label for value entry. (1: value label) */
+"Enter %1$@ value" = "输入%1$@数值";
+
+/* Segmented button title for insulin delivery log event history */
+"Event History" = "事件历史记录";
+
+/* No comment provided by engineer. */
+"Example" = "示例";
+
+
+/* 胰岛素模型设置描述（1：应用程序名称）（2：模型数量）*/
+"For fast acting insulin, %1$@ assumes it is actively working for 6 hours. You can choose from %2$@ different models for how the app measures the insulin’s peak activity." = "对于快速作用的胰岛素，%1$@ 假定其在积极工作6个小时。您可以选择%2$@不同的模型来衡量应用程序衡量胰岛素的峰值活动。";
+
+/* 关于校正范围格式的信息（1：应用程序名称）*/
+"For this range, choose the specific glucose value (or range of values) that you want %1$@ to aim for in adjusting your basal insulin." = "对于这个范围，选择您想要 %1$@ 调整您的基础胰岛素以达到特定的血糖值（或值范围）。";
+
+/* 治疗设置的支持按钮 */
+"Get help with Therapy Settings" = "获取治疗设置的帮助";
+
+/* 确认警报上的返回操作的文本 */
+"Go Back" = "返回";
+
+/* 高基础速率警告的标题文本 */
+"High Basal Rate" = "高基础速率";
+
+/* 高碳水化合物比率警告的标题文本 */
+"High Carb Ratio" = "高碳水化合物比率";
+
+/* 高修正值警告的标题文本 */
+"High Correction Value" = "高修正值";
+
+/* 高血糖安全限制警告的标题文本 */
+"High Glucose Safety Limit" = "高血糖安全限制";
+
+/* 高胰岛素敏感性警告的标题文本 */
+"High Insulin Sensitivity" = "高胰岛素敏感性";
+
+/* 高最大基础速率警告的标题文本 */
+"High Maximum Basal Rate" = "高最大基础速率";
+
+/* 高最大波卢斯警告的标题文本 */
+"High Maximum Bolus" = "高最大大剂量";
+
+/* 低餐前值警告的标题文本 */
+"High Pre-Meal Value" = "高餐前值";
+
+/* 高锻炼值警告的标题文本 */
+"High Workout Value" = "高锻炼值";
+
+/* 覆盖历史的文本 */
+"History" = "历史";
+
+/* Description of how to interact with summary screen */
+"If these settings look good to you, tap Save Settings to continue." = "如果这些设置看起来合适，请点击保存设置以继续。";
+
+/* Information about target range */
+"If you've used a CGM before, you're likely familiar with target range as a wide range of values you'd like for your glucose notification alerts, such as 70-180 mg/dL or 90-200 mg/dL." = "如果您以前使用过CGM，您可能熟悉目标范围，即您希望葡萄糖通知警报的广泛值范围，例如70-180毫克/分升或90-200毫克/分升。";
+
+/* Title text for insulin model */
+"Insulin Model" = "胰岛素模型";
+
+/* 多值胰岛素敏感性警告的标题文本 */
+"Insulin Sensitivities" = "胰岛素敏感性";
+
+/* 中断泵入剂量输入的描述（1：剂量类型的标题，2：加粗的值（如果没有值则为“?”），3：编程值（如果没有值则为“?”），4：单位） */
+"Interrupted %1$@: <b>%2$@</b> of %3$@ %4$@" = "中断 %1$@: <b>%2$@</b> / %3$@ %4$@";
+
+/* 守卫信息文本格式 */
+"It can be set as low as %1$@. It can be set as high as %2$@." = "它可以设置为低至 %1$@，也可设置为高至 %2$@。";
+
+/* 低基础胰岛素速率警告的标题文本 */
+"Low Basal Rate" = "低基础胰岛素速率";
+
+/* 低碳水化合物比率警告的标题文本 */
+"Low Carb Ratio" = "低碳水化合物比率";
+
+/* 低校正值警告的标题文本 */
+"Low Correction Value" = "低校正值";
+
+/* 低血糖安全限制警告的标题文本 */
+"Low Glucose Safety Limit" = "低血糖安全限制";
+
+/* 低胰岛素敏感性警告的标题文本 */
+"Low Insulin Sensitivity" = "低胰岛素敏感性";
+
+/* 低最大基础胰岛素速率警告的标题文本 */
+"Low Maximum Basal Rate" = "低最大基础胰岛素速率";
+
+/* 低最大泵入剂量警告的标题文本 */
+"Low Maximum Bolus" = "低最大泵入剂量";
+
+/* 低餐前值警告的标题文本 */
+"Low Pre-Meal Value" = "低餐前值";
+
+/* 低锻炼值警告的标题文本 */
+"Low Workout Value" = "低锻炼值";
+
+/* 胰岛素模型预设的标题 - Lyumjev */
+"Lyumjev" = "Lyumjev";
+
+/* 工程师未提供评论 */
+"Middle" = "中间";
+
+/* 工程师未提供评论 */
+"more content" = "更多内容";
+
+/* 添加新日程条目的小型模式对话框的标题 */
+"New Entry" = "新建条目";
+
+/* 提示零基础速率警告的标题文本 */
+"No Basal Insulin" = "无基础胰岛素";
+
+/* 覆盖历史视图的标题 */
+"Override History" = "覆盖历史记录";
+
+/* 多值餐前值警告的标题文本 */
+"Pre-Meal Values" = "餐前值";
+
+/* 处方部分的标题 */
+"Prescription" = "处方";
+
+/* ProgressIndicatorView在显示不确定进度时的无障碍标签 */
+"Progressing." = "正在进展。";
+
+/* 基础输送状态未设置时暂停恢复按钮的标题文本 */
+"Pump Inoperable" = "泵无法操作";
+
+/* 胰岛素模型预设的标题-快速作用成人 */
+"Rapid-Acting – Adults" = "快速作用 - 成人";
+
+/* 胰岛素模型预设的标题-快速作用儿童 */
+"Rapid-Acting – Children" = "快速作用 - 儿童";
+
+/* 胰岛素输送记录储水池历史的分段按钮标题 */
+"Reservoir" = "储药器";
+
+/* 总结说明部分的标题 */
+"Review and Save Settings" = "查看并保存设置";
+
+/* 如何与总结屏幕进行交互的说明 */
+"Review your therapy settings below. If you’d like to edit any of these settings, tap Back to go back to that screen." = "请查看以下疗法设置。如果您想编辑任何这些设置，请点击“返回”返回该屏幕。";
+
+/* 确认基础速率是否超出推荐范围的警报标题 */
+"Save Basal Rates?" = "保存基础速率？";
+
+/* 确认胰岛素比例超出推荐范围的警报标题 */
+"Save Carb Ratios?" = "保存碳水系数？";
+
+/* 确认更正范围超出推荐范围的警报标题 */
+"Save Correction Range(s)?" = "保存更正范围？";
+
+/* 确认输送限制超出推荐范围的警报标题 */
+"Save Delivery Limits?" = "保存输送限制？";
+
+/* 确认血糖安全限制超出推荐范围的警报标题 */
+"Save Glucose Safety Limit?" = "保存血糖安全限制？";
+
+/* 确认胰岛素敏感度超出推荐范围的警报标题 */
+"Save Insulin Sensitivities?" = "保存胰岛素敏感度？";
+
+/* 确认餐前范围覆盖超出推荐范围的警报标题 */
+"Save Pre-Meal Range?" = "保存餐前范围？";
+
+/* 确认锻炼范围覆盖超出推荐范围的警报标题 */
+"Save Workout Range?" = "保存锻炼范围？";
+
+/* 配置页面保存按钮文本 */
+"Saving..." = "保存中...";
+
+/* 预设计划页面标题 */
+"SCHEDULED PRESET" = "预设计划";
+
+/* 典型最大基础率信息 */
+"Some users choose a value 2, 3, or 4 times their highest scheduled basal rate." = "一些用户选择最高计划基础率的2、3或4倍。";
+
+/* 处方描述文本格式（1：提供者名称，2：处方日期） */
+"Submitted by %1$@, %2$@" = "由%1$@提交，%2$@处方";
+
+/* 支持部分标题 */
+"Support" = "支持";
+
+/* 工程师未提供任何评论 */
+"Switch Preview State" = "切换预览状态";
+
+/* Text directing the user to configure their first custom preset */
+"Tap '+' to create a new custom preset." = "点击 '+' 创建新的自定义预设。";
+
+/* Description of pre-meal mode */
+"Temporarily lower your glucose target before a meal to impact post-meal glucose spikes." = "暂时降低您的血糖目标，以影响餐后血糖飙升。";
+
+/* Description of workout mode */
+"Temporarily raise your glucose target before, during, or after physical activity to reduce the risk of low glucose events." = "在运动前、期间或后暂时提高您的血糖目标，以降低低血糖的风险。";
+
+/* Information about workout range relative to correction range */
+"than your Correction Range." = "比您的校正范围高。";
+
+/* Description for selection when no insulin type is selected. */
+"The currently selected fast acting insulin model will be used as a default." = "当前选择的快速作用胰岛素模型将被用作默认值。";
+
+/* Subtitle description of Walsh insulin model setting */
+"The legacy model used by Loop, allowing customization of action duration." = "Loop使用的传统模型，允许自定义作用时间。";
+
+/* Information about adult insulin model */
+"The rapid-acting adult model assumes peak activity at 75 minutes." = "快速作用的成人模型假定在75分钟时达到峰值活性。";
+
+/* Information about child insulin model */
+"The rapid-acting child model assumes peak activity at 65 minutes." = "快速作用的儿童模型假定在65分钟时达到峰值活性。";
+
+/* Information about basal rate scheduling */
+"The schedule starts at midnight and cannot contain a rate of 0 U/hr." = "计划从午夜开始，不可以包含0单位/小时的速率。";
+
+/* Therapy Settings screen title */
+"Therapy Settings" = "治疗设置";
+
+/* No comment provided by engineer. */
+"Therapy Settings Support Placeholder" = "治疗设置支持占位符";
+
+/* Subtitle of afrezza preset */
+"This model assumes peak insulin activity at 19 minutes." = "该模型假定胰岛素峰值活性发生在19分钟时。";
+
+/* Subtitle of Lyumjev preset */
+"This model assumes peak insulin activity at 55 minutes." = "该模型假定胰岛素峰值活性发生在55分钟时。";
+
+
+/* Subtitle of Rapid-Acting – Children preset */
+"This model assumes peak insulin activity at 65 minutes." = "该模型假定胰岛素在65分钟时峰值活性。";
+
+/* Subtitle of Rapid-Acting – Adult preset */
+"This model assumes peak insulin activity at 75 minutes." = "该模型假定胰岛素在75分钟时峰值活性。";
+
+/*Information about workout range relative to correction range */
+"This will typically be" = "这通常是";
+
+/* Label for offset from midnight picker */
+"Time" = "时间";
+
+/* No comment provided by engineer. */
+"To be implemented" = "待实现";
+
+/* No comment provided by engineer. */
+"Top" = "顶部";
+
+/* No comment provided by engineer. */
+"Top component" = "顶部组件";
+
+/* The text indicating Total for Daily Schedule Basal */
+"Total" = "总计";
+
+/* The text indicating U/day for Daily Schedule Basal */
+"U/day" = "U/天";
+
+/* Alert title when error occurs while saving a schedule */
+"Unable to Save" = "无法保存";
+
+/* Title for selection when no insulin type is selected. */
+"Unset" = "未设置";
+
+/* Placeholder text until value is entered */
+"Value" = "数值";
+
+/* The title for the override editing screen */
+"View Override" = "查看覆盖设置";
+
+
+/* 关于基础速率的信息 */
+"Your Basal Rate of insulin is the number of units per hour that you want to use to cover your background insulin needs." = "您的胰岛素基础速率是每小时您想使用的单位数，用于覆盖您的胰岛素基础需求。";
+
+/* 餐前下限信息文本 */
+"your Glucose Safety Limit" = "您的血糖安全限值";
+
+/* 免责声明 */
+"Your healthcare provider can help you choose a Correction Range that's right for you." = "您的医疗保健提供者可以帮助您选择适合您的纠正范围。";
+
+/* 胰岛素敏感因子的描述 */
+"Your Insulin Sensitivity Factor (ISF) is the drop in glucose expected from one unit of insulin." = "您的胰岛素敏感因子（ISF）是一单位胰岛素注射后预期降低的血糖。";
+
+/* 餐前范围格式的信息（1：应用程序名称） */
+"Your Pre-Meal Range should be the glucose value (or range of values) you want %1$@ to target by the time you take your first bite of your meal. This range will be in effect when you activate the Pre-Meal Preset button." = "您的餐前范围应该是您希望%1$@在您吃第一口餐前时达到的血糖值（或值范围）。当您激活餐前预设按钮时，该范围将生效。";
+
+/* 免责声明 */
+"Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as you feel comfortable." = "与您的医疗保健提供者合作，选择比您最高预定基础速率更高的值，但让您感觉舒适的时保守或积极。";
+
+/* 关于锻炼范围格式的信息（1：应用程序名称） */
+"Workout Range is the glucose value or range of values you want %1$@ to target during activity. This range will be in effect when you activate the Workout Preset button." = "锻炼范围是您希望%1$@在活动期间达到的血糖值或值范围。当您激活锻炼预设按钮时，该范围将生效。";
+
+/* 多值锻炼值警告的标题文本 */
+"Workout Values" = "锻炼数值";
+
+/* 添加比例的说明 */
+"You can add different carb ratios for different times of day by using the ➕." = "您可以使用➕为不同时间段添加不同的碳水化合物比例。";
+
+/* 添加胰岛素敏感性的说明 */
+"You can add different insulin sensitivities for different times of day by using the ➕." = "您可以使用➕为不同时间段添加不同的胰岛素敏感性。";
+
+/* 添加配置范围的说明 */
+"You can add different ranges for different times of day by using the ➕." = "您可以使用➕为不同时间段添加不同的范围。";
+
+/* 添加范围的说明 */
+"You can add entries for different times of day by using the ➕." = "您可以使用➕为不同时间段添加条目。";
+
+/* 编辑设置的说明 */
+"You can edit a setting by tapping into any line item." = "您可以通过点击任何行项目来编辑设置。";
+
+/* 编辑设置的说明 */
+"You can edit the setting by tapping into the line item." = "您可以通过点击行项目来编辑设置。";
+
+
+/* Information about maximum basal rate (1: app name) */
+"Maximum Basal Rate is the maximum automatically adjusted basal rate that %1$@ is allowed to enact to help reach your correction range." = "最大基础率是指%1$@被允许制定的最大自动调整基础率，以帮助达到你的矫正范围。";
+
+/* The title text for the maximum bolus value */
+"Maximum Bolus" = "最大大剂量";
+
+/* Information about maximum bolus (1: app name) */
+"Maximum Bolus is the highest bolus amount that you will allow %1$@ to recommend at one time to cover carbs or bring down high glucose." = "最大剂量是你允许%1$@一次推荐的最高剂量，以覆盖碳水化合物或降低高血糖。";
+
+
+
+/* Information about maximum automated insulin on board (1: app name) */
+"This setting will also determine a safety limit for automatic dosing. %1$@ will limit automatic delivery to keep the amount of active insulin below twice your maximum bolus." = "这一设置也将决定自动给药的安全限度。%1$@将限制自动给药，使活性胰岛素的量低于最大剂量的两倍。";
+
+
+/* Information about max number of basal rates (1: app name) (2: maximum schedule entry count) */
+"%1$@ supports 1 to %2$@ rates per day." = "%1$@支持每天1至%2$@的速率。";
