@@ -49,3 +49,108 @@
 /* The text for the Watch button for enabling workout mode */
 "Workout" = "运动";
 
+/* No glucose value representation (3 dashes for mg/dL; no spaces as this will get truncated in the watch complication) */
+"---" = "---";
+
+/* No glucose value representation (3 dashes for mg/dL) */
+"– – –" = "– – –";
+
+/* No comment provided by engineer. */
+"%@" = "%@";
+
+/* Format string for glucose range (1: lower bound)(2: upper bound)(3: unit) */
+"%1$@ – %2$@ %3$@" = "%1$@ – %2$@ %3$@";
+
+/* HUD row title for COB */
+"Active Carbs" = "活性碳水";
+
+/* HUD row title for IOB */
+"Active Insulin" = "活性胰岛素";
+
+/* Title of the user activity for adding carbs */
+"Add Carb Entry" = "添加碳水";
+
+/* Button text to confirm manual bolus on Apple Watch */
+"Bolus" = "注射大剂量";
+
+/* The title of the alert controller displayed after a bolus attempt fails */
+"Bolus Failed" = "大剂量注射失败";
+
+/* Alert title for updated bolus recommendation on Apple Watch */
+"Bolus Recommendation Updated" = "大剂量推荐已经更新";
+
+/* Button text to continue from carb entry to bolus entry on Apple Watch */
+"Continue" = "继续";
+
+/* The short unit display string for decibles */
+"dB" = "dB";
+
+/* The action button title to dismiss an error message */
+"Dismiss" = "关闭";
+
+/* Short unit label for gram measurement
+   The short unit display string for grams */
+"g" = "g";
+
+/* The short unit display string for milligrams of glucose per decilter */
+"mg/dL" = "mg/dL";
+
+/* The short unit display string for millimoles of glucose per liter */
+"mmol/L" = "mmol/L";
+
+/* HUD row title for Net Basal Rate */
+"Net Basal Rate" = "净基础率";
+
+/* Label for off button */
+"Off" = "关闭";
+
+/* No comment provided by engineer. */
+"OK" = "OK";
+
+/* Label for on button */
+"On" = "开启";
+
+/* The text for the Watch button for enabling a temporary override */
+"Override" = "覆盖";
+
+/* Alert message for updated bolus recommendation on Apple Watch */
+"Please reconfirm the bolus amount." = "请确认大剂量数量";
+
+/* Title for sheet to enable/disable pre-meal on watch */
+"Pre-Meal" = "餐前模式";
+
+/* The text for the Watch button for enabling a custom preset */
+"Preset" = "当前配置";
+
+/* Format string for combining localized numeric value and unit. (1: numeric value)(2: unit) */
+"QUANTITY_VALUE_AND_UNIT" = "%1$@ %2$@";
+
+/* The label and value showing the recommended bolus */
+"Rec: %@ U" = "推荐 : %@ U";
+
+/* Indicator that recommended bolus computation is in progress on Apple Watch */
+"REC: Calculating..." = "推荐: 计算中…";
+
+/* HUD row title for remaining reservoir volume */
+"Reservoir Volume" = "储药器剩余低";
+
+/* Button text to confirm carb entry without bolusing on Apple Watch */
+"Save" = "保存";
+
+/* Button text to confirm carb entry and bolus on Apple Watch */
+"Save & Bolus" = "保存并输注";
+
+/* The title of the alert controller displayed after a carb entry send attempt fails
+   The title of the alert controller displayed after a glucose range override send attempt fails */
+"Send Failed" = "发送失败";
+
+/* Help text for bolus confirmation on Apple Watch */
+"Turn Digital Crown\nto bolus" = "旋转实体按钮让两个三角重合后开始大剂量";
+
+
+/* The title of the alert controller displayed after a potential carb entry send attempt fails */
+"Unable to Reach iPhone" = "找不到iPhone";
+
+/* The text for the Watch button for enabling workout mode */
+"Workout" = "训练";
+

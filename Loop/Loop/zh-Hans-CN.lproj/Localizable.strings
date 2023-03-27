@@ -1493,7 +1493,7 @@
 "Loop will not work successfully until Bluetooth is enabled. You will not receive glucose readings, or be able to bolus."  = "在启用蓝牙之前，环路将无法成功工作。您将无法接收到葡萄糖读数，也无法推注。";
 
 /* Description string for temp basal only dosing strategy */
-"Loop will set temporary basal rates to increase and decrease insulin delivery."  = "Loop将设置临时的基础利率，以增加和减少胰岛素的输送。";
+"Loop will set temporary basal rates to increase and decrease insulin delivery."  = "Loop将设置临时的基础率，以增加和减少胰岛素的输送。";
 
 /*Title for bolus screen warning when glucose is below suspend threshold, but a bolus is recommended */
 "Low Glucose"  = "低血糖";

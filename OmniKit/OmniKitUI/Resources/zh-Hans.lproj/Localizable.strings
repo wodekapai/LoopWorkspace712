@@ -623,7 +623,7 @@
 "Set Temporary Basal"  = "设置临时基础";
 
 /* Button title to set temporary basal rate */
-"Set Temporary Basal Rate"  = "设置临时基本利率";
+"Set Temporary Basal Rate"  = "设置临时基础率";
 
 /* Error message for reservoir view during general pod fault */
 "Signal Loss"  = "信号丢失";
@@ -713,10 +713,10 @@
 "Unable To Reach Pod"  = "无法与Pod通信";
 
 /* Alert format string for a failure to set temporary basal. (1: error description) */
-"Unable to set a temporary basal rate: %1$@"  = "无法设置临时基本利率：%1$@";
+"Unable to set a temporary basal rate: %1$@"  = "无法设置临时基础率：%1$@";
 
 /* Alert format string for a failure to set temporary basal with recovery suggestion. (1: error description) (2: recovery text) */
-"Unable to set a temporary basal rate: %1$@\n\n%2$@"  = "无法设置临时基本利率：%1$@\n\n%2$@";
+"Unable to set a temporary basal rate: %1$@\n\n%2$@"  = "无法设置临时基础率：%1$@\n\n%2$@";
 
 /* Label for pod life state when pod not fully activated */
 "Unfinished Activation"  = "未完成激活";
